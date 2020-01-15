@@ -33,7 +33,10 @@
     <!--- PAINEL DE OFERTAS --->
 
     <div class="container">
+	
 	<div class="row">
+
+	
 		<div class="col-md-12">
 			<h2>Produtos em <b>Oferta</b></h2>
 			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
@@ -312,14 +315,32 @@
 			<a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
 				<i class="fa fa-angle-right"></i>
 			</a>
+
 		</div>
+
+	<h2>Categorias</h2>
+		<div class="row mx-auto">
+			<div class="img-box ml-5 mt-3">
+				<img src="../Img/cachorro.png" class="img-responsive img-fluid" href="#" width="300" alt="">
+	</div>
+
+	<div class="img-box ml-5 mt-3">
+		<img src="../Img/Gato.png" class="img-responsive img-fluid" href="#" width="300" alt="">
+	</div>
+
+	<div class="img-box ml-5 mt-3">
+		<img src="../Img/dono.png" class="img-responsive img-fluid" href="#" width="300" alt="">
+	</div>
+	</div>
+	
 		<h2>Adote seu <b>Pet</b></h2>
+
 		<h2>Frete <b>grátis</b> e entrega <b>rápida</b></h2>
+		
 		<h2>Contatos</h2>
 		</div>
 	</div>
 </div>
-
 
 
 <?php include "view/footer.php"?>
