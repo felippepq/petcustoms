@@ -334,7 +334,13 @@
 	</div>
 	
 		<h2>Adote seu <b>Pet</b></h2>
-
+		<table>
+  <tr>
+    <td><img  width="390" height="300" src='../Img/adote.jpg'/></td>
+    <td> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </br>
+	Phasellus bibendum aliquet erat, ut ornare purus malesuada et.</td> 
+  </tr>
+</table>
 		<h2>Frete <b>grátis</b> e entrega <b>rápida</b></h2>
 		
 		<h2>Contatos</h2>
