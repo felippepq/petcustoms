@@ -53,6 +53,9 @@
 					</thead>
 
 					<tbody>
+
+					<?php foreach($lista as $pedidos) { ?>
+
 						<tr>
 						<th scope="row">1</th>
 						<td>Mark</td>
@@ -63,6 +66,8 @@
 						<td>Jacob</td>
 						<td>Thornton</td>
 						</tr>
+						<?php } ?>
+
 					</tbody>
 
 				</table>

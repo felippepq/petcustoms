@@ -3,7 +3,6 @@
     <div class="jumbotron">
         <div class="container mt-5">
             <h4 class="display-4">Carrinho de Compras</h4>
-                <p class="lead"></p>
         </div>
     </div>
 

@@ -167,7 +167,11 @@
             $view = "carrinho.php";
             break;
 
-        
+        case 'confirmarpagamento':
+            //$obj = new \LOJA\API\PagamentoConfirmar;
+            //$msg = $obj->msg;
+            $view = "confirmar-pagamento.php";
+            break;
 
         case 'logincliente':
             $view = "form-login-cliente.php";
