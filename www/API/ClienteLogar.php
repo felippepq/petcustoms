@@ -6,8 +6,9 @@ use LOJA\Model\Cliente;
     class ClienteLogar{
         public $msg;
 
-        function __construct(){
+        function __construct($url){
             if($_POST){
+                
                 try{
                     $obj = new Cliente();
                     $obj->setEmail($_POST['email']);
@@ -17,6 +18,7 @@ use LOJA\Model\Cliente;
                     // Verifica se existe usuario com email e senha informados
 
                     $result = $DAO->buscaPorEmailSenha($obj);
+                    $this->verificaUrl($url);
                     
                     if($result){//se houver resultado
                         //guardo as informações do usuario na sessão
@@ -24,7 +26,7 @@ use LOJA\Model\Cliente;
                         $_SESSION['clienteemail'] = $result['email'];
                         $_SESSION['clientenome'] = $result['nome'];
 
-                        header("location: http://localhost/petcustoms/www/home/");
+                        header("location: ".$url."/painel/cliente");
                     }else{
                         $this->msg = "Cliente/Senha inválidos";
                     }
@@ -33,5 +35,17 @@ use LOJA\Model\Cliente;
                 }
             }
         }
-    }
+
+        function verificaUrl($url){
+            if(isset($_SESSION['url'])){
+
+                $url2 = $_SESSION['url'];
+                unset($_SESSION['url']);
+                header("location: ".$url2);
+
+            }else{
+                header("location: ".$url."/painel/cliente");
+              }
+           }
+        }
     ?>

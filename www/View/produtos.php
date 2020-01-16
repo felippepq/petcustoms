@@ -34,7 +34,7 @@
             <?php foreach($lista as $produto) { ?>
 
                 <div class="col-12 col-sm-8 col-md-6 col-lg-4">
-                <div class="card mt-2">
+                <div class="card shadow-sm mt-2">
                 <img class="w-100 mt-2 mb-3 foto-produto" src="<?php echo $url;['imagem']?>/View/img/produtos/<?php echo $produto['imagem'] ?>" />
                     <div class="card-body">
                     <h4 class="card-title font-weight-bold nome-produto text-center"><a href="<?php echo $url; ?>/produto/item/<?php echo $produto['id'] ?>"><?php echo $produto['nome'] ?></h4>

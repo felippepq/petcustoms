@@ -66,4 +66,12 @@ class Carrinho{
 		}
 		return $total;
 	}
+	
+	public function totalItens(){
+		$total = 0;
+		foreach($this->lista as $item){
+			$total = $total + 1;
+		}
+		return $total;
+	}
 }

@@ -563,7 +563,15 @@ h4 {
 
             <ul class="navbar-nav">
             <li class="nav-item dropdown carrinho-menu">
-            <a class="nav-link dropdown" href="<?php echo $url; ?>/carrinho/">  <i class="fa fa-shopping-cart"></i> Carrinho</a> 
+            <a class="nav-link dropdown" href="<?php echo $url; ?>/carrinho/">  <i class="fa fa-shopping-cart"></i> Carrinho 
+			<span><?php 
+          if(isset($_SESSION['carrinho'])){
+          $obj = $_SESSION['carrinho'];
+          echo $obj->totalItens();
+        }else{
+          echo "0";
+        }
+         ?></span> </a>
             </li>
             </ul>
             <ul class="navbar-nav ">

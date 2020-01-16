@@ -30,6 +30,7 @@ if($_POST){
 
     }catch(Exception $e){
        $msg = $e->getMessage();
+       
        echo $msg;
     }
   }

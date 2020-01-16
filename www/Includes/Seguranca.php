@@ -5,7 +5,7 @@ class Seguranca{
   
     public static function restritoAdm(){
         if(!isset($_SESSION['usuarioid'])){
-            header("location: localhost/petcustoms/www/login/admin/");
+            header("location: .$url./login/admin/");
         }
     }
     
@@ -13,8 +13,9 @@ class Seguranca{
 
         $config = new Config();
         if(!isset($_SESSION['clienteid'])){
-            header("location: localhost/petcustoms/www/login/cliente/");
+            header("location: .$url./login/cliente/");
 
         }
     }
 }
+?>

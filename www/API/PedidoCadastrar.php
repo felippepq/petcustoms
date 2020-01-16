@@ -10,31 +10,33 @@ class PedidoCadastrar{
 
     public $msg;
 
-            function __construct($url){
+        function __construct($url){
+            
+            if(isset($_SESSION['clienteid'])){
+                $this->efetuarPedido();
+                header("location: ".$url."/pedido/pagamento/");
+            }else{
+                $_SESSION['url'] = $url."/pedido/finalizar/";
+                header("location: ".$url."/login/cliente/");
+                 }
+            }
+    
+        function efetuarPedido(){
             
             try{
+                $obj = new Pedido();
+                $obj->setData('2019-12-25');
+                $obj->setFrete(20.0);
+                $obj->setDias(5);
+        
+                $DAO = new DAOPedido();
+                $this->msg = $DAO->cadastrar($obj, $_SESSION['carrinho']);
 
-        // Criamos um objeto/produto
-        $c = new Cliente();
-        $c->setId($_SESSION['clienteid']);
-        $c->setEmail($_SESSION['clienteemail']);
+                echo $this->$msg;
+            }catch(Exception $e){
 
-        $obj = new Pedido();
-        $obj->setData('2019-12-25');
-        $obj->setFrete(20.9);
-        $obj->setDias(5);
-        $obj->setCliente($c);
-
-        $DAO = new DAOPedido();
-        $this->msg = $DAO->cadastrar($obj, $_SESSION['carrinho']);
-
-        header("location: ".$url."/painel/cliente");
-
-    }catch(Exception $e){
-        $this->$msg = $e->getMessage();
- 
-    }
-}
-  }
-
+            }
+            }
+        }
+    
 ?>

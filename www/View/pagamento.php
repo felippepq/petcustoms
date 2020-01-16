@@ -7,7 +7,7 @@
       </div>
 <div class="container">
 
-            <h4 class="mb-3">Payment</h4>
+            <h5 class="mb-3">N° Pedido: <span class="font-weight-bold"><?php echo $_SESSION['idpedido'];?></span></h5>
 
             <div class="d-block my-3">
               <div class="custom-control custom-radio">

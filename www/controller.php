@@ -140,7 +140,7 @@
             break;
 
         case 'logincliente':
-            $obj = new \LOJA\API\ClienteLogar;
+            $obj = new \LOJA\API\ClienteLogar($url);
             $msg = $obj->msg;
             $view = "form-login-cliente.php";
             break;
@@ -167,10 +167,10 @@
             $view = "carrinho.php";
             break;
 
-        case 'confirmarpagamento':
+        case 'pedidopagamento':
             //$obj = new \LOJA\API\PagamentoConfirmar;
             //$msg = $obj->msg;
-            $view = "confirmar-pagamento.php";
+            $view = "pagamento.php";
             break;
 
         case 'logincliente':
@@ -190,7 +190,7 @@
         case 'pedidofinalizar':
             \LOJA\Includes\Seguranca::restritoCliente();
             $obj = new \LOJA\API\PedidoCadastrar($url); 
-            $view = "form-cliente-login.php"; // pagina login cliente 
+            $view = "form-login-cliente.php"; // pagina login cliente 
             break;
 
         case 'cadastrocliente':

@@ -19,7 +19,6 @@
 
 <table class="table table-hover">
 <thead class="thead titulo-tabela">
-
     <tr>
       <th>Produto</th>
 	  <th>Qntd</th>
@@ -91,7 +90,7 @@
 					<div class="input-group">
 						<input type="text" class="form-control" name="cep" placeholder="Digite o CEP">
 						<span class="input-group-append"> 
-							<button class="btn btn-warning botao-carrinho" style="color: #6f42c1!important;">Calcular</button>
+							<button class="btn btn-warning titulo-tabela">Calcular</button>
 						</span>
 					</div>
 				</div>
