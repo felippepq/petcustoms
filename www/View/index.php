@@ -334,10 +334,54 @@
 	</div>
 	
 		<h2>Adote seu <b>Pet</b></h2>
-
-		<h2>Frete <b>grátis</b> e entrega <b>rápida</b></h2>
 		
-		<h2>Contatos</h2>
+		<img src="../Img/Frete.png" class="img-responsive img-fluid mx-auto col-12" href="#"  alt="">
+
+		<h2 class="mt-5">Contatos</h2>
+		<div class="container contact">
+	<div class="row">
+		<div class="col-md-3 mt-3 msg">
+			<div class="contact-info ">
+				<img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
+				
+				<h4>Nos envie uma mensagem!</h4>
+			</div>
+		</div>
+		<div class="col-md-9 contact">
+			<div class="contact-form">
+				<div class="form-group">
+				
+				  <div class="col-sm-10">          
+					<input type="text" class="form-control" id="fname" placeholder="Digite seu nome" name="fname">
+				  </div>
+				</div>
+				<div class="form-group">
+				  
+				  <div class="col-sm-10">          
+					<input type="text" class="form-control" id="lname" placeholder="Digite um assunto" name="lname">
+				  </div>
+				</div>
+				<div class="form-group">
+				  
+				  <div class="col-sm-10">
+					<input type="email" class="form-control" id="email" placeholder="Digite seu email" name="email">
+				  </div>
+				</div>
+				<div class="form-group">
+				
+				  <div class="col-sm-10">
+					<textarea class="form-control" rows="5" id="comment" placeholder="Digite sua mensagem"></textarea>
+				  </div>
+				</div>
+				<div class="form-group">        
+				  <div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-default">Enviar</button>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 		</div>
 	</div>
 </div>

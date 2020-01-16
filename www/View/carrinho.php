@@ -79,7 +79,6 @@
 	<p class="icontext"><i class="icon text-success fa fa-truck"></i> Entrega Grátis para a região sul e sudeste.</p>
 </div>
 
-
 	</main> <!-- col.// -->
 	<aside class="col-md-3">
 		<div class="card rounded mb-3">
