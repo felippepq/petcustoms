@@ -166,8 +166,8 @@
             break;
 
         case 'pedidopagamento':
-            //$obj = new \LOJA\API\PagamentoConfirmar;
-            //$msg = $obj->msg;
+            $obj = new \LOJA\API\PagamentoVisualizar;
+            $pagamento = $obj->pagamento;
             $view = "pagamento.php";
             break;
 

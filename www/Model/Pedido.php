@@ -7,7 +7,8 @@ class Pedido{
     private $data;
     private $frete;
     private $dias;
-    private $cliente;
+	private $cliente;
+	private $total;
 
     function __construct(){
 	}
@@ -51,6 +52,12 @@ class Pedido{
 
 	public function setCliente($cliente){
 		$this->cliente = $cliente;
+	}
+	public function getTotal(){
+		return $this->total;
+	}
+	public function setTotal($total){
+		$this->total = $total;
 	}
 }
 
