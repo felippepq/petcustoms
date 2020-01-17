@@ -318,6 +318,8 @@
 
 		</div>
 
+ 	<!--- PAINEL DE OFERTAS --->
+
 	<h2>Categorias</h2>
 		<div class="row mx-auto">
 			<div class="img-box ml-5 mt-3">
