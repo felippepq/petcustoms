@@ -548,7 +548,7 @@ h4 {
 
             <div class="bg-light rounded rounded-pill shadow-sm col-sm-12 col-xs-12 col-md-12 col-lg-7 barra-pesquisa mx-auto">
             <div class="input-group">
-            <input href="<?php echo $url; ?>/resultado/busca/" name="" type="search" placeholder="Procure em todo nosso site..." aria-describedby="button-addon1" class="form-control border-0 bg-light">
+            <input href="<?php echo $url; ?>/produto/buscar/" name="buscar" type="search" placeholder="Procure em todo nosso site..." aria-describedby="button-addon1" class="form-control border-0 bg-light">
             <div class="input-group-append">
             <button id="button-addon1" type="submit" class="btn btn-link text-warning"><i class="fa fa-search"></i></button>
             </div>

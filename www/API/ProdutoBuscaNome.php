@@ -1,4 +1,4 @@
-<?php
+  <?php
 namespace LOJA\API;
 use LOJA\DAO\DAOProduto;
 class ProdutoBuscaNome {

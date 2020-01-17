@@ -21,8 +21,8 @@ class DAOPedido{
             $con->bindValue(":fk_cliente", $_SESSION['clienteid']);
             $con->execute();
             $lastId = $pdo->lastInsertId();
-            $_SESSION['idpedido'] = $lastId;
-            
+            $_SESSION['idproduto'] = $lastId;
+
 
             $con2 = $pdo->prepare("INSERT INTO item VALUES ( :quantidade, :fk_pedido, :fk_produto)" );
 

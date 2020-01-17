@@ -8,6 +8,9 @@
 <div class="container">
 
             <h5 class="mb-3">N° Pedido: <span class="font-weight-bold"><?php echo $_SESSION['idpedido'];?></span></h5>
+            <h5 class="mb-3">Valor Total: <span class="font-weight-bold">Total: R$<?php echo $_SESSION[''];?></span></h5>
+            <h5 class="mb-3">N° Pedido: <span class="font-weight-bold"> Frete: R$<?php echo $_SESSION[''];?></span></h5>
+            <hr>
 
             <div class="d-block my-3">
               <div class="custom-control custom-radio">

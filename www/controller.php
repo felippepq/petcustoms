@@ -151,15 +151,13 @@
             $view = "index.php";
             break;
         
-
         case 'carrinhoadicionar':
             $obj = new \LOJA\API\CarrinhoVisualizar;
             $view = "carrinho.php";
             break;
 
         case 'carrinhoremover':
-            $obj = new \LOJA\API\CarrinhoRemover;
-            
+            $obj = new \LOJA\API\CarrinhoRemover;        
             $view = "carrinho.php";
             break;
 
@@ -199,9 +197,9 @@
             $view = "form-cadastrar-cliente.php";
             break;
         
-        case 'resultadobusca':
-            $obj = new \LOJA\API\BuscaProdutoNome;
-            $msg = $obj->msg;
+        case 'produtobuscar':
+            $obj = new \LOJA\API\ProdutoBuscaNome;
+            $lista = $obj->lista;
             $view = "resultado-busca.php";
             break;
             
