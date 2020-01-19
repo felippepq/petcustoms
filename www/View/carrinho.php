@@ -131,6 +131,4 @@
 <!-- ========================= SECTION CONTENT END// ========================= -->
 </div>
 
-
-
 <?php include "view/footer.php"?>
