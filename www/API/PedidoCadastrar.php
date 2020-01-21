@@ -33,12 +33,11 @@ class PedidoCadastrar{
                 $DAO = new DAOPedido();
                 $this->msg = $DAO->cadastrar($obj, $_SESSION['carrinho']);
 
-<<<<<<< HEAD
+
                 if(isset($_SESSION['url'])){
                     $url2 = $_SESSION['url'];
                 }
-=======
->>>>>>> Atualização
+
                 
             }catch(Exception $e){
 
