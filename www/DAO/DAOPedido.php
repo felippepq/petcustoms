@@ -63,7 +63,8 @@ class DAOPedido{
     $con->bindValue(":id", $idCliente);
     $result = $con->execute();
     }
-    public function PedidoDetalhado(Type $var = null)
+
+    public function PedidoDetalhado($detalhePedido)
     {
         // DETALHA UM PEDIDO
       
@@ -83,6 +84,7 @@ class DAOPedido{
           ON produto.pk_produto = item.fk_produto
           
           WHERE pedido.pk_pedido = :id";
+          
     }
 
     public function buscarPedidoCliente($idPedido)

@@ -48,6 +48,5 @@ use LOJA\Model\Cliente;
               }
            }
         }
-echo $_SESSION['url'];
 ?>
 

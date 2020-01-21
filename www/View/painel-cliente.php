@@ -55,11 +55,10 @@
 
 					<tbody>
 
-					<?php foreach($lista as $pedidos) { ?>
 
 						<tr>
-						<th scope="row">1</th>
-						<td>Mark</td>
+						<th scope="row"><?php echo $_SESSION['idpedido'];?></th>
+						<td></td>
 						<td>Otto</td>
 						</tr>
 						<tr>
@@ -67,7 +66,7 @@
 						<td>Jacob</td>
 						<td>Thornton</td>
 						</tr>
-						<?php } ?>
+
 
 					</tbody>
 

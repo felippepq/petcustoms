@@ -136,6 +136,7 @@
 
         case 'painelcliente':
             \LOJA\Includes\Seguranca::restritoCliente();
+            
             $view = "painel-cliente.php";
             break;
 
