@@ -32,7 +32,7 @@ class PedidoCadastrar{
                 $DAO = new DAOPedido();
                 $this->msg = $DAO->cadastrar($obj, $_SESSION['carrinho']);
 
-                echo $this->$msg;
+                
             }catch(Exception $e){
 
             }
