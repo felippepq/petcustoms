@@ -62,7 +62,7 @@
 											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
 										</ul>
 									</div>
-									<a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+
 								</div>						
 							</div>
 						</div>
@@ -73,7 +73,7 @@
 								</div>
 								<div class="thumb-content">
 									<h4>Kit família</h4>
-									<p class="item-price"><strike>R$150,00</strike> <span>R$120,00</span></p>
+									<p class="item-price"><strike>R$150,00</strike> <span>R$100,00</span></p>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -83,7 +83,7 @@
 											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
 										</ul>
 									</div>
-									<a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+					
 								</div>						
 							</div>
 						</div>		
@@ -94,7 +94,7 @@
 								</div>
 								<div class="thumb-content">
 									<h4>Body</h4>
-									<p class="item-price"><strike>R$110,00</strike> <span>R$80,00</span></p>
+									<p class="item-price"><strike>R$115,00</strike> <span>R$80,00</span></p>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -104,7 +104,7 @@
 											<li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
 										</ul>
 									</div>
-									<a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+			
 								</div>						
 							</div>
 						</div>								
@@ -125,7 +125,7 @@
 											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
 										</ul>
 									</div>
-									<a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+					
 								</div>						
 							</div>
 						</div>
@@ -150,7 +150,7 @@
 											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
 										</ul>
 									</div>
-									<a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+				
 								</div>						
 							</div>
 						</div>
@@ -171,7 +171,7 @@
 											<li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
 										</ul>
 									</div>
-									<a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+					
 								</div>						
 							</div>
 						</div>
@@ -192,7 +192,7 @@
 											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
 										</ul>
 									</div>
-									<a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+			
 								</div>						
 							</div>
 						</div>
@@ -213,7 +213,7 @@
 											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
 										</ul>
 									</div>
-									<a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+						
 								</div>						
 							</div>
 						</div>						
@@ -238,7 +238,7 @@
 											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
 										</ul>
 									</div>
-									<a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+						
 								</div>						
 							</div>
 						</div>
@@ -259,7 +259,7 @@
 											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
 										</ul>
 									</div>
-									<a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+						
 								</div>						
 							</div>
 						</div>
@@ -280,7 +280,7 @@
 											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
 										</ul>
 									</div>
-									<a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+								
 								</div>						
 							</div>
 						</div>	
@@ -301,7 +301,7 @@
 											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
 										</ul>
 									</div>
-									<a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+									
 								</div>						
 							</div>
 						</div>
@@ -321,16 +321,16 @@
  	<!--- PAINEL DE OFERTAS --->
 
 	<h2>Categorias</h2>
-		<div class="row mx-auto">
-			<div class="img-box ml-5 mt-3">
-				<img src="../Img/cachorro.png" class="img-responsive img-fluid" href="#" width="300" alt="">
+		<div class="row ">
+			<div class="card img-box mx-auto mt-3">
+				<img src="../Img/cachorro.png" class="img-responsive img-fluid" href="<?php echo $url; ?>/cat-cachorro/" width="300" alt="">
 	</div>
 
-	<div class="img-box ml-5 mt-3">
+	<div class="card img-box mx-auto mt-3">
 		<img src="../Img/Gato.png" class="img-responsive img-fluid" href="#" width="300" alt="">
 	</div>
 
-	<div class="img-box ml-5 mt-3">
+	<div class="card img-box mx-auto mt-3">
 		<img src="../Img/dono.png" class="img-responsive img-fluid" href="#" width="300" alt="">
 	</div>
 	</div>
@@ -340,7 +340,7 @@
 		<img src="../Img/Frete.png" class="img-responsive img-fluid mx-auto col-12" href="#"  alt="">
 
 		<h2 class="mt-5">Contatos</h2>
-		<div class="container contact">
+	
 	<div class="row">
 		<div class="col-md-3 mt-3 msg">
 			<div class="contact-info ">
