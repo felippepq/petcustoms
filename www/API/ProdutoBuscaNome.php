@@ -1,15 +1,22 @@
-  <?php
+<?php
 namespace LOJA\API;
-use LOJA\DAO\DAOProduto;
-class ProdutoBuscaNome {
 
-    public $lista;
+use LOJA\DAO\DAOProduto;
+
+class ProdutoBuscar{
+    public $produto; 
     
-    function __construct(){
-        
-        $busca = $_GET['id'];
-        $obj = new DAOProduto();
-        $this->lista = $obj->buscaPorNome($busca);
+
+    public function __construct(){
+        if ($_POST['nome']) {
+            try {
+                $DAO = new DAOProduto();
+                $this->produto = $DAO->buscarPorNome($_POST['nome']);
+                
+            }catch (\Exception $e) {
+                $msg = $e->getMessage();
+            }
+        }
     }
 }
 ?>

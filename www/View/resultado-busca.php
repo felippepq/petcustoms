@@ -1,6 +1,3 @@
-
-
-
 <?php include "view/header.php"?>
 
 <div class="jumbotron">
