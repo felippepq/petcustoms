@@ -6,8 +6,8 @@
       <div class="row">
         <div class="col-md-12 text-center d-md-flex align-items-center">
           <ul class="nav d-flex justify-content-center">
-            <li class="nav-item"> <a class="nav-link active" href="#">Inicio</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#">Produtos</a> </li>
+            <li class="nav-item"> <a class="nav-link active" href="<?php echo $url; ?>/home/">Inicio</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="<?php echo $url; ?>/produtos/">Produtos</a> </li>
             <li class="nav-item"> <a class="nav-link" href="#">Sobre Nós</a> </li>
             <li class="nav-item"> <a class="nav-link" href="#">Contato</a> </li>
 
