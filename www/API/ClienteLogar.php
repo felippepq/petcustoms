@@ -18,15 +18,15 @@ use LOJA\Model\Cliente;
                     // Verifica se existe usuario com email e senha informados
 
                     $result = $DAO->buscaPorEmailSenha($obj);
-                    $this->verificaUrl($url);
+                    
                     
                     if($result){//se houver resultado
                         //guardo as informações do usuario na sessão
                         $_SESSION['clienteid'] = $result['id'];
                         $_SESSION['clienteemail'] = $result['email'];
                         $_SESSION['clientenome'] = $result['nome'];
-
-                        header("location: ".$url."/painel/cliente");
+                        $this->verificaUrl($url);
+                        //header("location: ".$url."/painel/cliente");
                     }else{
                         $this->msg = "Cliente/Senha inválidos";
                     }
@@ -40,7 +40,7 @@ use LOJA\Model\Cliente;
             if(isset($_SESSION['url'])){
 
                 $url2 = $_SESSION['url'];
-                unset($_SESSION['url']);
+
                 header("location: ".$url2);
 
             }else{
@@ -48,4 +48,6 @@ use LOJA\Model\Cliente;
               }
            }
         }
-    ?>
+echo $_SESSION['url'];
+?>
+

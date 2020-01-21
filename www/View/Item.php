@@ -1,11 +1,6 @@
 <?php  include "View/header.php"?>
 
-<div class="jumbotron mt-5"> 
-
-<div class="container mt-5">
-
-</div>
-</div>
+<div class="container">
 
  <!--Main layout-->
  <main class="mt-5 pt-4">
@@ -117,6 +112,6 @@
     </div>
   </main>
   <!--Main layout-->
-
+</div>
 
 <?php  include "View/footer.php"?>
