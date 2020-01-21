@@ -203,10 +203,18 @@
             $view = "resultado-busca.php";
             break;
         
-        case 'categoriacachorro':
+        case 'catcachorro':
             $view = "cat-cachorro.php";
             break;
+
+        case 'catgato':
+            $view = "cat-gato.php";
+            break;
         
+        case 'catdono':
+            $view = "cat-dono.php";
+            break;
+
         default:
         $obj = new \LOJA\API\DepartamentoListar;
         $lista = $obj->lista;
