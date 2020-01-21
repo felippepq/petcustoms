@@ -597,11 +597,12 @@ h4 {
             <i class="fa fa-user-circle" aria-hidden="true"></i>
 
             <!-- Nome do Usuario/Cliente Logado --->
-            <?php if(isset($_SESSION['clientenome'])){ echo $_SESSION['clientenome'];
-					}else{
-                        echo "Painel";
+            <?php if(isset($_SESSION['clientenome'])){
+                        echo $_SESSION['clientenome'];
+                    }else{
+                    echo "0";
                     }
-						?>
+			?>
             <!-- Nome do Usuario/Cliente Logado --->
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">

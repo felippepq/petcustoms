@@ -107,16 +107,7 @@
 		</div>  <!-- card .// -->
 		<div class="card">
 			<div class="card-body">
-
-
-			
-
-					<!-- COLOCAR CONTEUDO AQUI  -->
-
-
-
-
-					<hr>
+	
 					<p class="text-center mb-3">
 						<img src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/misc/payments.png" height="26">
 					</p>

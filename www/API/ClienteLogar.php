@@ -26,7 +26,7 @@ use LOJA\Model\Cliente;
                         $_SESSION['clienteemail'] = $result['email'];
                         $_SESSION['clientenome'] = $result['nome'];
                         $this->verificaUrl($url);
-                        //header("location: ".$url."/painel/cliente");
+                        header("location: ".$url."/painel/cliente");
                     }else{
                         $this->msg = "Cliente/Senha inválidos";
                     }
