@@ -323,15 +323,18 @@
 	<h2>Categorias</h2>
 		<div class="row ">
 			<div class="card img-box mx-auto mt-3">
-				<img src="../Img/cachorro.png" class="img-responsive img-fluid" href="<?php echo $url; ?>/cat-cachorro/" width="300" alt="">
+				<img src="../Img/cachorro.png" class="img-responsive img-fluid" href="#" width="300" alt="">
+				<a href="<?php echo $url; ?>/cat/cachorro/" class="stretched-link"></a>
 	</div>
 
 	<div class="card img-box mx-auto mt-3">
 		<img src="../Img/Gato.png" class="img-responsive img-fluid" href="#" width="300" alt="">
+		<a href="<?php echo $url; ?>/cat/gato/" class="stretched-link"></a>
 	</div>
 
 	<div class="card img-box mx-auto mt-3">
 		<img src="../Img/dono.png" class="img-responsive img-fluid" href="#" width="300" alt="">
+		<a href="<?php echo $url; ?>/cat/dono/" class="stretched-link"></a>
 	</div>
 	</div>
 	
