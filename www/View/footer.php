@@ -11,7 +11,7 @@
             <li class="nav-item"> <a class="nav-link" href="#">Sobre Nós</a> </li>
             <li class="nav-item"> <a class="nav-link" href="#">Contato</a> </li>
 
-          </ul> <i class="d-block fa fa-paw fa-3x mx-auto text-primary"></i>
+          </ul> <i class="d-block fa fa-paw fa-3x mx-auto text-warning"></i>
           <p class="mb-0 py-1">©2020 Desenvolvido por Felippe e Caroline</p>
         </div>
       </div>
