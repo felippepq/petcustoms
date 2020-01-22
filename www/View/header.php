@@ -565,24 +565,22 @@ h4 {
             </ul>
 
 <!--- Barra de Pesquisa -->    
-<form class="form-inline " method="POST" action="<?php echo $url;?>/produto/buscar/">
+
             <div class="bg-light rounded rounded-pill shadow-sm col-sm-12 col-xs-12 col-md-12 col-lg-7 barra-pesquisa mx-auto">
             <div class="input-group">
-            <input name="nome" type="search" placeholder="Procure em todo nosso site..." aria-describedby="button-addon1" class="form-control border-0 bg-light">
-            
+            <input href="<?php echo $url; ?>/produto/buscar/" name="buscar" type="search" placeholder="Procure em todo nosso site..." aria-describedby="button-addon1" class="form-control border-0 bg-light">
             <div class="input-group-append">
-            <button id="nome" type="submit" class="btn btn-link text-warning"><i class="fa fa-search"></i></button>
+            <button id="button-addon1" type="submit" class="btn btn-link text-warning"><i class="fa fa-search"></i></button>
             </div>
             </div>
             </div>
-</form>
 
 <!--- Barra de Pesquisa -->
 
             <ul class="navbar-nav">
             <li class="nav-item dropdown carrinho-menu">
             <a class="nav-link dropdown" href="<?php echo $url; ?>/carrinho/">  <i class="fa fa-shopping-cart"></i> Carrinho 
-			<span><?php 
+			<span class="badge badge-pill badge-primary"></span><?php 
           if(isset($_SESSION['carrinho'])){
           $obj = $_SESSION['carrinho'];
           echo $obj->totalItens();
@@ -598,24 +596,35 @@ h4 {
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-user-circle" aria-hidden="true"></i>
 
-            <!-- Nome do Usuario/Cliente Logado --->
-            <?php if(isset($_SESSION['clientenome'])){
-                        echo $_SESSION['clientenome'];
-                    }else{
-                    echo "0";
-                    }
+<!-- Nome do Usuario/Cliente Logado --->
+			<?php
+			if(isset($_SESSION['clientenome']))
+			{
+			echo $_SESSION['clientenome'];
+			}
+			else
+			{
+			session_destroy();
+			echo "Login";
+			}           
 			?>
-            <!-- Nome do Usuario/Cliente Logado --->
+<!-- Nome do Usuario/Cliente Logado --->
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+			<?php
+		if(isset($_SESSION['clientenome'])){?>
+		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		<a class="dropdown-item font-weight-bold" href="<?php echo $url; ?>/cliente/logoff"> Sair &nbsp; <i class="fa fa-sign-out-alt" aria-hidden="true"></i></a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item font-weight-bold" id="painel" href="<?php echo $url; ?>/painel/cliente">Minha Conta &nbsp; <i class="fas fa-chalkboard-teacher"></i></a>
+		
+		<?php }else{?>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item font-weight-bold" href="<?php echo $url; ?>/login/cliente/"> Fazer Login &nbsp; <i class="fa fa-user" aria-hidden="true"></i> </a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item font-weight-bold" href="<?php echo $url; ?>/cadastro/cliente/"> Cadastrar-se &nbsp; <i class="fa fa-pen" aria-hidden="true"></i> </a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item font-weight-bold" href="<?php echo $url; ?>/cliente/logoff"> Sair &nbsp; <i class="fa fa-sign-out-alt" aria-hidden="true"></i></a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item font-weight-bold" id="painel" href="<?php echo $url; ?>/painel/cliente">Minha Conta &nbsp; <i class="fas fa-chalkboard-teacher    "></i></a>
-                        
+		<?php } ?>
+
             </div>
             </li>
             </ul>
