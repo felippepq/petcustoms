@@ -216,6 +216,10 @@
             $view = "cat-dono.php";
             break;
 
+        case 'regulamento':
+            $view = "regulamento.php";
+            break;
+
         default:
         $obj = new \LOJA\API\DepartamentoListar;
         $lista = $obj->lista;

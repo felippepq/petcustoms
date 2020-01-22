@@ -26,10 +26,6 @@
         <img src="../Img/site-info-promo.png" class="img-responsive img-fluid promo-info">
     </div>
 
-    <div class="container">
-    
-    </div>
-
     <!--- PAINEL DE OFERTAS --->
 
     <div class="container">

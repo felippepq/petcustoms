@@ -9,9 +9,10 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
     <link rel="icon" type="imagem/png" href="../Img/logo.png" />
+
     <style>
     
-    h2 {
+h2 {
 	color: #6f42c1!important;
 	font-size: 26px;
 	font-weight: 100;
@@ -78,7 +79,7 @@ h2::after {
 
 <h2>Acompanhe seu pedido</h2>
 
-<p>Após fazer login no Pet Customs você será direcionado(a) ao "Minha Conta", no qual pode acompanhar a aprovação do pagamento, 
+<p>No campo "Minha Conta" você poderá acompanhar a aprovação do pagamento, 
     a entrega do produto à transportadora e seu trajeto até o endereço informado.
     Nosso sistema envia, automaticamente, e-mails de alerta notificando qualquer alteração no processamento do pedido. Ao se cadastrar, 
     informe um e-mail válido para que possa receber esses alertas.</p>
@@ -127,4 +128,3 @@ h2::after {
         A confirmação é realizada em até três dias úteis, a partir do pagamento do boleto.</p>
 
     </div>
-        
