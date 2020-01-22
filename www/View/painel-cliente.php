@@ -21,7 +21,7 @@
 			<a class="list-group-item bg-warning info-painel font-weight-bold" href="#"> Painel do Cliente </a>
 			<a class="list-group-item"> 
 			<div class="">"<?php echo $_SESSION['clientenome']; ?>" está logado. <span class="badge badge-success">Online</span>  </div>
-			<a class="list-group-item font-weight-bold" href="http://localhost/petcustoms/www/cliente/logoff">Sair  <i class="fa fa-sign-out-alt" aria-hidden="true"></i></a>  
+			<a class="list-group-item font-weight-bold" href=/cliente/logoff">Sair  <i class="fa fa-sign-out-alt" aria-hidden="true"></i></a>  
 		</ul>
 	</aside> <!-- col.// -->
 	<main class="col-md-9">
@@ -47,27 +47,53 @@
 
 					<thead class="thead titulo-tabela">
 						<tr>
-						<th width="100">N° Pedido</th>
+						<th width="100px">N° Pedido</th>
+						<th>Data</th>
 						<th>Pedido</th>
-						<th width="155">Data do Pedido</th>
+						<th>Data</th>
+
+						<th>Valor</th>
 						</tr>
 					</thead>
 
 					<tbody>
 
+					<?php
+                        @$pedido = $_SESSION['pedido'];
 
+                        if($pedido === null || empty($pedido->getItems())){
+                            // Inicio HTML
+                            ?><tr>
+								<td></td>
+                                  <td><p class="mx-auto">Voce não tem pedidos</p></td>
+                                  </tr>
+                            <?php
+                            // Fim HTML
+                        }else{
+
+                            foreach ($lista->getItems() as $pedido){
+                                
+                                $lista = $pedido->getProduto();
+                                
+                                
+                               // $link = ".$url./petcustoms/carrinho/remover/".$produto->getId();
+                            
+                                // Inicio HTML
+                            ?>
 
 						<tr>
 						<th scope="row"><?php echo $_SESSION['idpedido'];?></th>
-						<td></td>
-						<td><?php echo $_SESSION['dias'];?></td>
-						</tr>
-						<tr>
-						<th scope="row">2</th>
+						<td>1</td>
+						<td>1</td>
 						<td>Jacob</td>
 						<td>Thornton</td>
 						</tr>
 
+						<?php   
+                    // Fim HTML
+                            }
+                        }
+                    ?>
 
 
 					</tbody>

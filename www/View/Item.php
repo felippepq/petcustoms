@@ -9,6 +9,8 @@
       <!--Grid row-->
       <div class="row wow fadeIn">
 
+      <?php foreach($lista as $produto) { ?>
+
         <!--Grid column-->
         <div class="col-md-6 mb-4">
 
@@ -59,7 +61,9 @@
       </div>
       <!--Grid row-->
 
+
       <hr>
+
 
       <!--Grid row-->
       <div class="row d-flex justify-content-center wow fadeIn">
@@ -105,6 +109,7 @@
 
         </div>
         <!--Grid column-->
+        <?php } ?>
 
       </div>
       <!--Grid row-->

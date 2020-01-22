@@ -31,6 +31,8 @@ class CalcularFrete{
 
          $this->frete = $frete;
 
+         $_SESSION['frete'] =  $this->frete;
+
     }
    }
 

@@ -70,9 +70,20 @@
 
 
 <div class="card-body">
- <a href="#" class="btn btn-light float-left"> <i class="fa fa-chevron-left"></i> Voltar </a> 
-	<a href="<?php echo $url; ?>/pedido/finalizar/" class="btn btn-warning botao-carrinho float-right"> Finalizar Compra <i class="fa fa-chevron-right"></i> </a>
-</div>	
+
+    <?php if(isset($_SESSION['frete'])){ ?>
+
+        <a href="#" class="btn btn-light float-left"> <i class="fa fa-chevron-left"></i> Voltar </a> 
+            <a href="<?php echo $url; ?>/pedido/finalizar/" class="btn btn-warning botao-carrinho float-right"> Finalizar Compra <i class="fa fa-chevron-right"></i> </a>
+        </div>
+        
+                    <?php }else{ ?>
+                        <a href="#" class="btn btn-light float-left"> <i class="fa fa-chevron-left"></i> Voltar </a> 
+            <a href="<?php echo $url; ?>/pedido/finalizar/" class="btn btn-warning botao-carrinho float-right disabled"> Finalizar Compra <i class="fa fa-chevron-right"></i> </a>
+        </div>
+
+                        <?php } ?>
+
 </div> <!-- card.// -->
 
 <div class="alert alert-success mt-3">

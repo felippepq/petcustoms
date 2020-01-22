@@ -45,6 +45,7 @@
 			<div class="carousel-inner">
 				<div class="item carousel-item active">
 					<div class="row">
+
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
@@ -62,10 +63,16 @@
 											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
 										</ul>
 									</div>
+								</div>		
 
-								</div>						
 							</div>
 						</div>
+
+
+
+
+
+
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
@@ -86,7 +93,11 @@
 					
 								</div>						
 							</div>
-						</div>		
+						</div>	
+						
+						
+
+
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
