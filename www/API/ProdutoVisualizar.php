@@ -4,14 +4,14 @@ namespace LOJA\API;
 
     use  LOJA\DAO\DAOProduto;
 
-    class ProdutoListar{
+    class ProdutoVisualizar{
 
             public $lista;
     
             function __construct(){
 
     $obj = new DAOProduto();
-    $this->lista = $obj->detalheProduto();
+    $this->lista = $obj->detalheProduto($_GET['id']);
             }
         }
 ?>

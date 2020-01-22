@@ -545,66 +545,66 @@ h4 {
             <body>
 <!--  Menu/Navbar -->
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-warning shadow fixed-top">
-            <div class="container">
-            <a class="navbar-brand"  href="<?php echo $url; ?>/home/">PetCustoms</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-            <span class="navbar-toggler-icon"></span>
-            </button>
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning shadow fixed-top">
+        <div class="container">
+        <a class="navbar-brand"  href="<?php echo $url; ?>/home/">PetCustoms</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-            <ul class="navbar-nav">
-            <li class="nav-item">
-            <a class="nav-link" href="<?php echo $url; ?>/produtos/">Produtos</a>
-            </li>
-            </ul>
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+        <a class="nav-link" href="<?php echo $url; ?>/produtos/">Produtos</a>
+        </li>
+        </ul>
 
 <!--- Barra de Pesquisa -->    
-            <div class="bg-light rounded rounded-pill shadow-sm col-sm-12 col-xs-12 col-md-12 col-lg-7 barra-pesquisa mx-auto" method="POST" action="<?php echo $url;?>/produto/buscar/">
-            <div class="input-group">
-            <input href="<?php echo $url; ?>/produto/buscar/" name="buscar" type="search" placeholder="Procure em todo nosso site..." aria-describedby="button-addon1" class="form-control border-0 bg-light">
-            <div class="input-group-append">
-            <button id="button-addon1" type="submit" class="btn btn-link text-warning"><i class="fa fa-search"></i></button>
-            </div>
-            </div>
-</div>
+        <div class="bg-light rounded rounded-pill shadow-sm col-sm-12 col-xs-12 col-md-12 col-lg-7 barra-pesquisa mx-auto" method="POST" action="<?php echo $url;?>/produto/buscar/">
+        <div class="input-group">
+        <input href="<?php echo $url; ?>/produto/buscar/" name="buscar" type="search" placeholder="Procure em todo nosso site..." aria-describedby="button-addon1" class="form-control border-0 bg-light">
+        <div class="input-group-append">
+        <button id="button-addon1" type="submit" class="btn btn-link text-warning"><i class="fa fa-search"></i></button>
+        </div>
+        </div>
+		</div>
 
 <!--- FIM Barra de Pesquisa -->
 
-            <ul class="navbar-nav">
-            <li class="nav-item dropdown carrinho-menu">
-            <a class="nav-link dropdown" href="<?php echo $url; ?>/carrinho/">  <i class="fa fa-shopping-cart"></i> Carrinho 
-			<span class="badge badge-pill badge-primary"></span><?php 
-          if(isset($_SESSION['carrinho'])){
-          $obj = $_SESSION['carrinho'];
-          echo $obj->totalItens();
-        }else{
-          echo "0";
-        }
-         ?></span> </a>
-            </li>
-            </ul>
-            <ul class="navbar-nav ">
-            <li class="nav-item dropdown">
+        <ul class="navbar-nav">
+        <li class="nav-item dropdown carrinho-menu">
+        <a class="nav-link dropdown" href="<?php echo $url; ?>/carrinho/">  <i class="fa fa-shopping-cart"></i> Carrinho 
+		<span class="badge badge-pill badge-primary"></span><?php 
+		if(isset($_SESSION['carrinho'])){
+		$obj = $_SESSION['carrinho'];
+		echo $obj->totalItens();
+		}else{
+		echo "0";
+		}
+        ?></span> </a>
+        </li>
+        </ul>
+        <ul class="navbar-nav ">
+        <li class="nav-item dropdown">
                     
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fa fa-user-circle" aria-hidden="true"></i>
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fa fa-user-circle" aria-hidden="true"></i>
 
 <!-- Nome do Usuario/Cliente Logado --->
 		<?php
-			if(isset($_SESSION['clientenome']))
-			{
-			echo $_SESSION['clientenome'];
-			}
-			else
-			{
-			session_destroy();
-			echo "Login/Cadastrar";
-			}           
+		if(isset($_SESSION['clientenome']))
+		{
+		echo $_SESSION['clientenome'];
+		}
+		else
+		{
+		session_destroy();
+		echo "Login/Cadastrar";
+		}           
 		?>
 <!-- Nome do Usuario/Cliente Logado --->
-        </a>
 
+        </a>
 		<?php
 		if(isset($_SESSION['clientenome'])){?>
 		<div class="dropdown-menu" aria-labelledby="navbarDropdown">

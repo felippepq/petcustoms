@@ -40,6 +40,7 @@ namespace LOJA\DAO;
                 $sql = "SELECT
                 produto.nome,
                 produto.preco,
+                produto.descricao,
                 produto.imagem,
                 produto.pk_produto as 'id',
                 departamento.nome as 'departamento'
@@ -56,6 +57,18 @@ namespace LOJA\DAO;
                 }
     
                 return $lista;
+
+            }
+
+            public function detalheProduto($id){
+
+                $sql = "SELECT * FROM produto WHERE pk_produto = :id";
+                $con = Conexao::getInstance()->prepare($sql);
+                $con->bindValue(":id", $id);
+                $con->execute();
+                
+                $detalhe = $con->fetch(\PDO::FETCH_ASSOC);   
+                return $detalhe;
 
             }
 

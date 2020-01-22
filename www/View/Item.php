@@ -9,14 +9,14 @@
       <!--Grid row-->
       <div class="row wow fadeIn">
 
-      <?php foreach($lista as $produto) { ?>
 
-        <!--Grid column-->
+
         <div class="col-md-6 mb-4">
 
-          <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/14.jpg" class="img-fluid" alt="">
+          <img src="<?php echo $url; ?>/View/img/produtos/<?php echo $detalhe['imagem'] ?>" class="img-fluid" alt="">
 
         </div>
+
         <!--Grid column-->
 
         <!--Grid column-->
@@ -27,7 +27,7 @@
 
             <div class="mb-3">
               <a href="">
-                <span class="badge purple mr-1">Categoria: <?php echo $produto['departamento'] ?> </span>
+                <span>Nome: <?php echo $detalhe['nome'] ?></span>
               </a>
             </div>
 
@@ -35,20 +35,18 @@
               <span class="mr-1">
                 <del>$200</del>
               </span>
-              <span>R$ <?php echo  number_format($produto['preco'],2, ",",","); ?></span>
+              <span>R$ <?php echo  number_format($detalhe['preco'],2, ",",","); ?></span>
             </p>
 
             <p class="lead font-weight-bold">Descrição</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque quia ipsa
-              sint voluptatibus!
-              Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
+            <p><?php echo $detalhe['descricao'] ?></p>
 
             <form class="d-flex justify-content-left">
               <!-- Default input -->
-              <button class="btn btn-primary titulo-tabela btn-md my-0 p text-center" type="submit">Adicionar ao Carrinho
+              <a href="<?php echo $url ?>/carrinho/adicionar/<?php echo $detalhe['id'] ?>" class="btn btn-primary titulo-tabela btn-md my-0 p text-center" type="submit">Adicionar ao Carrinho
                 <i class="fas fa-shopping-cart ml-1"></i>
-              </button>
+      </a>
 
             </form>
 
@@ -109,7 +107,6 @@
 
         </div>
         <!--Grid column-->
-        <?php } ?>
 
       </div>
       <!--Grid row-->

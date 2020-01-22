@@ -26,7 +26,7 @@
                         
                         <button class="btn btn-lg btn-warning btn-block text-uppercase texto-botao" type="submit">Entrar</button>
                         <p class="link-login-2  texto-login2">Não tem uma conta ?
-                            <a class="link-login" href="">Cadastre-se!</a>
+                            <a class="link-login" href="<?php echo $url; ?>/cadastro/cliente/">Cadastre-se!</a>
                         </p> 
                         <hr class="my-4">
                         <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Entrar com o Google</button>

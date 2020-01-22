@@ -1,12 +1,10 @@
 <?php include "view/header.php"?>
 
-<div class="jumbotron mt-5"> 
-
-<div class="container">
-<h4 class="display-4">Minha Conta</h4>
-
-</div>
-</div>
+<div class="jumbotron">
+        <div class="container mt-5">
+        <h2>Painel do Cliente</h2>
+        </div>
+    </div>
 
 </section>
 <!-- ========================= SECTION INTRO END// ========================= -->
@@ -21,7 +19,7 @@
 			<a class="list-group-item bg-warning info-painel font-weight-bold" href="#"> Painel do Cliente </a>
 			<a class="list-group-item"> 
 			<div class="">"<?php echo $_SESSION['clientenome']; ?>" está logado. <span class="badge badge-success">Online</span>  </div>
-			<a class="list-group-item font-weight-bold" href=/cliente/logoff">Sair  <i class="fa fa-sign-out-alt" aria-hidden="true"></i></a>  
+			<a class="list-group-item font-weight-bold" href="<?php echo $url; ?>/cliente/logoff">Sair  <i class="fa fa-sign-out-alt" aria-hidden="true"></i></a>  
 		</ul>
 	</aside> <!-- col.// -->
 	<main class="col-md-9">
