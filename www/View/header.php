@@ -39,7 +39,6 @@
 
     .preco-produto{
         color: #6f42c1!important;
-
     }
     
     .menu-cate:hover{
@@ -77,13 +76,11 @@
         margin-top: 100px!important;
     }
         
-
     .card-categoria{
         margin-top: 100px!important;
 
         }
     }
-
 
 .carousel {
 	margin: 50px auto;
@@ -236,7 +233,7 @@ h2 {
 	text-align: center;
 	text-transform: uppercase;
 	position: relative;
-	margin: 90px 0 50px;
+	margin: 50px 0 50px;
 }
 
 h2 b {
@@ -550,9 +547,7 @@ h4 {
 
             <nav class="navbar navbar-expand-lg navbar-light bg-warning shadow fixed-top">
             <div class="container">
-            <a class="navbar-brand"  href="<?php echo $url; ?>/home/">
-            PetCustoms
-            </a>
+            <a class="navbar-brand"  href="<?php echo $url; ?>/home/">PetCustoms</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -575,7 +570,7 @@ h4 {
             </div>
             </div>
 
-<!--- Barra de Pesquisa -->
+<!--- FIM Barra de Pesquisa -->
 
             <ul class="navbar-nav">
             <li class="nav-item dropdown carrinho-menu">
@@ -603,7 +598,8 @@ h4 {
                     echo "0";
                     }
 			?>
-            <!-- Nome do Usuario/Cliente Logado --->
+            <!-- FIM Nome do Usuario/Cliente Logado --->
+
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item font-weight-bold" href="<?php echo $url; ?>/login/cliente/"> Fazer Login &nbsp; <i class="fa fa-user" aria-hidden="true"></i> </a>

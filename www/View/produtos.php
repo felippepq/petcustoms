@@ -3,31 +3,29 @@
 <div class="container py-4 my-2 mt-5">
     <div class="row">
         <div class="col-md-3 mb-5 mb-md-0">
-
-       
-                <div class="py-2 px-3 card-categoria mt-5">
+            <div class="py-2 px-3 card-categoria mt-5">
                 <ul class="list-group" style=background-color: #6f42c1;>
-			<a class="list-group-item text-center font-weight-bold  info-painel"> <i class="fa fa-align-justify" aria-hidden="true"></i> &nbsp; Categorias</a>
-			<a class="list-group-item menu-cate text-decoration-none text-center" href="<?php echo $url; ?>/cat/cachorro/"> <i class="fa fa-paw" aria-hidden="true"></i> &nbsp; Cachorro </a>
-			<a class="list-group-item menu-cate text-decoration-none text-center" href="<?php echo $url; ?>/cat/gato/"><i class="fa fa-cat" aria-hidden="true"></i>  &nbsp;   Gato </a>
-			<a class="list-group-item menu-cate text-decoration-none text-center" href="<?php echo $url; ?>/cat/dono/">  <i class="fa fa-child" aria-hidden="true"></i> &nbsp; Dono do Pet </a>
-		</ul>
-
-            </div>
+                    <a class="list-group-item text-center font-weight-bold  info-painel"> <i class="fa fa-align-justify" aria-hidden="true"></i> &nbsp; Categorias</a>
+                    <a class="list-group-item menu-cate text-decoration-none text-center" href="<?php echo $url; ?>/cat/cachorro"> <i class="fa fa-paw" aria-hidden="true"></i> &nbsp; Cachorro </a>
+                    <a class="list-group-item menu-cate text-decoration-none text-center" href="<?php echo $url; ?>/cat/gato"><i class="fa fa-cat" aria-hidden="true"></i>  &nbsp;   Gato </a>
+                    <a class="list-group-item menu-cate text-decoration-none text-center" href="<?php echo $url; ?>/cat/dono">  <i class="fa fa-child" aria-hidden="true"></i> &nbsp; Dono do Pet </a>
+</ul>
+    </div>
         </div>
 
-        <div class="col-md-9">
-        <ul class="nav justify-content-end mr-4">
+<div class="col-md-9">
+    <ul class="nav justify-content-end mr-4">
         <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle font-weight-bold" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Filtrar Por</a>
-            <div class="dropdown-menu">
+        <div class="dropdown-menu">
             <a class="dropdown-item" href="#">Mais Vendidos</a>
-            <div class="dropdown-divider"></div>
+        <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Maior Preço</a>
-            <div class="dropdown-divider"></div>
+        <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Menor Preço</a>
-            </div>
-        </ul>
+</div>
+    </ul>
+    
 <hr>
     <div class="row px-3">
                 

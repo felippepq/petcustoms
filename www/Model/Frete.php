@@ -20,7 +20,6 @@ class Frete{
     private $valor;
 
 
-
     public function __construct($codServico,$cepOrigem,$cepDestino,$peso,
                                 $altura,$largura,$comprimento,$valorDeclarado){
 
@@ -115,8 +114,6 @@ class Frete{
 		$this->valor = $valor;
 	}
 
-
-
     public function getUrl(){
         $correios = "http://ws.correios.com.br/calculador/CalcPrecoPrazo.aspx?nCdEmpresa=&sDsSenha=&"
         ."sCepOrigem=".$this->getCepOrigem()
@@ -129,5 +126,4 @@ class Frete{
         ."nCdServico=".$this->getCodServico()."&nVlDiametro=0&StrRetorno=xml";
         return $correios;
     }
-
 }

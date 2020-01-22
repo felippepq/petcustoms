@@ -22,16 +22,14 @@
     </div>
     </div>
 
-    <div class="container">
-        <img src="../Img/site-info-promo.png" class="img-responsive img-fluid promo-info">
+    <div class="container frete">
+	<a href ="<?php echo $url; ?>/regulamento/"><img src ="../Img/Frete.png" class="img-responsive img-fluid mx-auto col-12"/></a>
     </div>
 
     <!--- PAINEL DE OFERTAS --->
 
     <div class="container">
-	
 	<div class="row">
-
 	
 		<div class="col-md-12">
 			<h2>Produtos em <b>Oferta</b></h2>
@@ -314,7 +312,7 @@
 
 		</div>
 
- 	<!--- PAINEL DE OFERTAS --->
+ 	<!--- FIM PAINEL DE OFERTAS --->
 
 	<h2>Categorias</h2>
 		<div class="row ">
@@ -335,8 +333,6 @@
 	</div>
 	
 		<h2>Adote seu <b>Pet</b></h2>
-		
-		<img src="../Img/Frete.png" class="img-responsive img-fluid mx-auto col-12" href="#"  alt="">
 
 		<h2 class="mt-5">Contatos</h2>
 	
@@ -386,6 +382,5 @@
 		</div>
 	</div>
 </div>
-
 
 <?php include "view/footer.php"?>
