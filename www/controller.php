@@ -92,9 +92,10 @@
             break;
 
         case 'produtobuscar':
-            $obj = new \LOJA\API\ProdutoBuscaNome;
-            $lista = $obj->lista;
-            $view = "lista-produto.php";
+            $obj = new \LOJA\API\ProdutoBuscar;
+           // $lista = $obj->lista;
+            $produto = $obj->produto;
+            $view = "resultado-busca.php";
             break;
 
         case 'loginadmin':

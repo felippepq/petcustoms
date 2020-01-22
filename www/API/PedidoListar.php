@@ -11,7 +11,7 @@ namespace LOJA\API;
             function __construct(){
 
     $obj = new DAOPedido();
-    $this->lista = $obj->listaPedidoCliente();
+    $this->lista = $obj->listaPedidos();
             }
         }
 ?>

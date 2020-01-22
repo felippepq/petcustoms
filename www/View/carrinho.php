@@ -46,7 +46,7 @@
                                 $produto = $item->getProduto();
                                 
                                 
-                                $link = "http://localhost/petcustoms/carrinho/remover/".$produto->getId();
+                                $link = ".$url./petcustoms/carrinho/remover/".$produto->getId();
                             
                                 // Inicio HTML
                             ?>

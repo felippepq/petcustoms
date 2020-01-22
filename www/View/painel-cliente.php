@@ -56,16 +56,18 @@
 					<tbody>
 
 
+
 						<tr>
 						<th scope="row"><?php echo $_SESSION['idpedido'];?></th>
 						<td></td>
-						<td>Otto</td>
+						<td><?php echo $_SESSION['dias'];?></td>
 						</tr>
 						<tr>
 						<th scope="row">2</th>
 						<td>Jacob</td>
 						<td>Thornton</td>
 						</tr>
+
 
 
 					</tbody>

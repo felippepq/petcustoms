@@ -565,15 +565,14 @@ h4 {
             </ul>
 
 <!--- Barra de Pesquisa -->    
-
-            <div class="bg-light rounded rounded-pill shadow-sm col-sm-12 col-xs-12 col-md-12 col-lg-7 barra-pesquisa mx-auto">
+            <form class="bg-light rounded rounded-pill shadow-sm col-sm-12 col-xs-12 col-md-12 col-lg-7 barra-pesquisa mx-auto" method="POST" action="<?php echo $url;?>/produto/buscar/">
             <div class="input-group">
             <input href="<?php echo $url; ?>/produto/buscar/" name="buscar" type="search" placeholder="Procure em todo nosso site..." aria-describedby="button-addon1" class="form-control border-0 bg-light">
             <div class="input-group-append">
             <button id="button-addon1" type="submit" class="btn btn-link text-warning"><i class="fa fa-search"></i></button>
             </div>
             </div>
-            </div>
+            </form>
 
 <!--- Barra de Pesquisa -->
 
@@ -597,7 +596,7 @@ h4 {
             <i class="fa fa-user-circle" aria-hidden="true"></i>
 
 <!-- Nome do Usuario/Cliente Logado --->
-			<?php
+		<?php
 			if(isset($_SESSION['clientenome']))
 			{
 			echo $_SESSION['clientenome'];
@@ -605,13 +604,13 @@ h4 {
 			else
 			{
 			session_destroy();
-			echo "Login";
+			echo "Login/Cadastrar";
 			}           
-			?>
+		?>
 <!-- Nome do Usuario/Cliente Logado --->
-            </a>
+        </a>
 
-			<?php
+		<?php
 		if(isset($_SESSION['clientenome'])){?>
 		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 		<a class="dropdown-item font-weight-bold" href="<?php echo $url; ?>/cliente/logoff"> Sair &nbsp; <i class="fa fa-sign-out-alt" aria-hidden="true"></i></a>
@@ -619,17 +618,19 @@ h4 {
         <a class="dropdown-item font-weight-bold" id="painel" href="<?php echo $url; ?>/painel/cliente">Minha Conta &nbsp; <i class="fas fa-chalkboard-teacher"></i></a>
 		
 		<?php }else{?>
-			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item font-weight-bold" href="<?php echo $url; ?>/login/cliente/"> Fazer Login &nbsp; <i class="fa fa-user" aria-hidden="true"></i> </a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item font-weight-bold" href="<?php echo $url; ?>/cadastro/cliente/"> Cadastrar-se &nbsp; <i class="fa fa-pen" aria-hidden="true"></i> </a>
+		
+		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item font-weight-bold" href="<?php echo $url; ?>/login/cliente/"> Fazer Login &nbsp; <i class="fa fa-user" aria-hidden="true"></i> </a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item font-weight-bold" href="<?php echo $url; ?>/cadastro/cliente/"> Cadastrar-se &nbsp; <i class="fa fa-pen" aria-hidden="true"></i> </a>
+		
 		<?php } ?>
 
-            </div>
-            </li>
-            </ul>
-            </div>
-            </div>
-            </nav>  
+        </div>
+        </li>
+        </ul>
+        </div>
+        </div>
+        </nav>  
 
 <!--  Menu/Navbar -->

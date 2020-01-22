@@ -18,10 +18,12 @@ class DAOPedido{
             $con->bindValue(":data_pedido", $pedido->getData());
             $con->bindValue(":frete", $pedido->getFrete());
             $con->bindValue(":dias", $pedido->getDias());
+            $con->bindValue(":nome", $pedido->getNome());
+            $con->bindValue(":dias", $pedido->getPreco());
             $con->bindValue(":fk_cliente", $_SESSION['clienteid']);
             $con->execute();
             $lastId = $pdo->lastInsertId();
-            $_SESSION['idpedido'] = $lastId;
+            $_SESSION['idpedido, dias'] = $lastId;
 
 
             $con2 = $pdo->prepare("INSERT INTO item VALUES (:quantidade, :fk_pedido, :fk_produto)" );
@@ -64,7 +66,7 @@ class DAOPedido{
     $result = $con->execute();
     }
 
-    public function PedidoDetalhado($detalhePedido)
+    public function listaPedidos($pedido)
     {
         // DETALHA UM PEDIDO
       
@@ -74,18 +76,29 @@ class DAOPedido{
       produto.nome,
       produto.preco
       
-          FROM pedido INNER JOIN cliente
-          ON pedido.fk_cliente = cliente.pk_cliente
+        FROM pedido INNER JOIN cliente
+        ON pedido.fk_cliente = cliente.pk_cliente
 
-          INNER JOIN item
-          ON item.fk_pedido = pedido.pk_pedido
+        INNER JOIN item
+        ON item.fk_pedido = pedido.pk_pedido
 
-          INNER JOIN produto
-          ON produto.pk_produto = item.fk_produto
+        INNER JOIN produto
+        ON produto.pk_produto = item.fk_produto
           
-          WHERE pedido.pk_pedido = :id";
-          
-    }
+        WHERE pedido.pk_pedido = :id";
+
+        $con = Conexao::getInstance()->prepare($sql);
+        $con->execute();
+
+        $lista = array();
+
+        while($pedido = $con->fetch(\PDO::FETCH_ASSOC)){
+            $lista[] = $pedido;
+        }
+
+        return $lista;
+        }
+
 
     public function buscarPedidoCliente($idPedido)
     {
@@ -93,6 +106,8 @@ class DAOPedido{
         pedido.data_pedido,
         pedido.frete,
         pedido.dias,
+        produto.nome,
+        produto.preco
         sum(produto.preco*item.quantidade) as total
         
           from pedido inner join cliente
@@ -113,6 +128,8 @@ class DAOPedido{
         $pedido->setDias($obj['dias']);
         $pedido->setFrete($obj['frete']);
         $pedido->setTotal($obj['total']);
+        $pedido->setNome($obj['nome']);
+        $pedido->setPreco($obj['preco']);
         
         return $pedido;
     }
