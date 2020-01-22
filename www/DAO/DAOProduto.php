@@ -77,20 +77,24 @@ namespace LOJA\DAO;
                 return $produto;
             }
 
-            public function buscaPorNome($busca){
+            public function buscarPorNome($nome)
+            {
+                $sql = "SELECT * FROM produto WHERE nome = :nome";
         
-                $sql = "SELECT * FROM produto WHERE nome LIKE :busca";
                 $con = Conexao::getInstance()->prepare($sql);
-                var_dump($con);
-                $con->bindValue(":busca", '%'.$busca.'%');
+                $con->bindValue(":nome", $nome);
                 $con->execute();
         
-                $lista = array();
+                $obj = $con->fetch(\PDO::FETCH_ASSOC);
         
-                while($produto = $con->fetch(\PDO::FETCH_ASSOC)) {
-                    $lista[] = $produto;
-                }
-                return $lista;
+                $produto = new Produto();
+                $produto->setPk_produto($obj['pk_produto']);
+                $produto->setNome($obj['nome']);
+                $produto->setPreco($obj['preco']);
+                $produto->setDepartamento($obj['departamento']);
+                $produto->setImagem($obj['imagem']);
+        
+                return $produto;
             }
 
             public function deleteAll(){
