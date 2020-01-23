@@ -2,7 +2,7 @@
 
     <div class="jumbotron">
         <div class="container mt-5">
-            <h4 class="display-4">Carrinho de Compras</h4>
+        <h2>Produtos em <b>Oferta</b></h2>
         </div>
     </div>
 
@@ -17,7 +17,7 @@
 
 
 
-<table class="table table-hover">
+<table class="table">
 <thead class="thead titulo-tabela">
     <tr>
       <th>Produto</th>
@@ -35,7 +35,7 @@
                         if($carrinho === null || empty($carrinho->getItems())){
                             // Inicio HTML
                             ?><tr>
-                                  <td><p>Seu Carrinho está vazio</p></td>
+                                  <td><p><img width="100px" src="https://imagensemoldes.com.br/wp-content/uploads/2018/06/Emoji-Triste-PNG.png" class=" mx-auto img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""></p></td>
                                   </tr>
                             <?php
                             // Fim HTML
@@ -46,7 +46,7 @@
                                 $produto = $item->getProduto();
                                 
                                 
-                                $link = ".$url./petcustoms/carrinho/remover/".$produto->getId();
+                                $link = ".$url./carrinho/remover/".$produto->getId();
                             
                                 // Inicio HTML
                             ?>

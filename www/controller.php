@@ -125,7 +125,8 @@
             break;      
 
         case 'produtoitem':
-            $obj = new \LOJA\API\ProdutoListarHome;
+            $obj = new \LOJA\API\ProdutoVisualizar;
+            $detalhe = $obj->lista;
             $view = "item.php";
             break;
 

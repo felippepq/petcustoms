@@ -1,4 +1,9 @@
 ﻿<?php include "view/header.php"?>
+<div class="jumbotron">
+        <div class="container mt-5">
+        <h2>Produtos</h2>
+        </div>
+    </div>
 
 <div class="container py-4 my-2 mt-5">
     <div class="row">
