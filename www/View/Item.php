@@ -27,14 +27,11 @@
 
             <div class="mb-3">
               <a href="">
-                <span>Nome: <?php echo $detalhe['nome'] ?></span>
+                <span class="display-4 text-decoration-none"> <?php echo $detalhe['nome'] ?></span>
               </a>
             </div>
 
             <p class="lead">
-              <span class="mr-1">
-                <del>$200</del>
-              </span>
               <span>R$ <?php echo  number_format($detalhe['preco'],2, ",",","); ?></span>
             </p>
 
