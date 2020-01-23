@@ -2,27 +2,27 @@
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin-top: 50px;">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                <img class="d-block w-100 img-responsive" src="../Img/img1.jpg" alt="First slide">
-                </div>
+                	<img class="d-block w-100 img-responsive" src="../Img/petcustoms.png" alt="First slide">
+</div>
                 <div class="carousel-item">
-                <img class="d-block w-100" src="../Img/img2.jpg" alt="Second slide">
-                </div>
+                	<img class="d-block w-100" src="../Img/promoção.png" alt="Second slide">
+</div>
                 <div class="carousel-item">
-                <img class="d-block w-100" src="../Img/img3.jpg" alt="Third slide">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
+                	<img class="d-block w-100" src="../Img/adoção.png" alt="Third slide">
+</div>
+    </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
     </div>
-    </div>
+</div>
 
-    <div class="container frete">
+<div class="container frete">
 	<a href ="<?php echo $url; ?>/regulamento/"><img src ="../Img/Frete.png" class="img-responsive img-fluid mx-auto col-12"/></a>
     </div>
 

@@ -1,3 +1,5 @@
+<?php include "view/header.php"?>
+
 <!doctype html>
 <html lang="pt-br">
     <head>
@@ -19,7 +21,7 @@ h2 {
 	text-align: center;
 	text-transform: uppercase;
 	position: relative;
-	margin: 60px 0 40px;
+	margin: 80px 0 40px;
 }
 
 h2 b {
@@ -128,3 +130,4 @@ h2::after {
         A confirmação é realizada em até três dias úteis, a partir do pagamento do boleto.</p>
 
     </div>
+    <?php include "view/footer.php"?>

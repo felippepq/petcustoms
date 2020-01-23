@@ -15,7 +15,6 @@
 
                         <form class="form-signin" method="post" action="cadastrar">
                        
-
                         <div class="form-label-group">
                             <input type="text" id="usuario" name="nome" class="form-control" required autofocus>
                             <label for="inputUserame">Nome completo</label>
