@@ -14,9 +14,9 @@
 <div class="container">
 
 <div class="row">
-	<aside class="col-md-3">
+	<aside class="col-md-3 ">
 		<ul class="list-group" style=background-color: #6f42c1;>
-			<a class="list-group-item bg-warning info-painel font-weight-bold" href="#"> Painel do Cliente </a>
+			<a class="list-group-item info-painel font-weight-bold text-center" > Painel do Cliente </a>
 			<a class="list-group-item"> 
 			<div class="">"<?php echo $_SESSION['clientenome']; ?>" está logado. <span class="badge badge-success">Online</span>  </div>
 			<a class="list-group-item font-weight-bold" href="<?php echo $url; ?>/cliente/logoff">Sair  <i class="fa fa-sign-out-alt" aria-hidden="true"></i></a>  
@@ -29,8 +29,9 @@
 	<li class="nav-item">
 		<a class="nav-link active fonte-weight-bold" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Pedidos</a>
 	</li>
+
 	<li class="nav-item">
-		<a class="nav-link font-weight-bold" id="profile-tab" data-toggle="tab" href="#perfil" role="tab" aria-controls="profile" aria-selected="false">Editar Informações</a>
+		<a class="nav-link font-weight-bold" id="profile-tab" data-toggle="tab" href="#perfil" role="tab" aria-controls="profile" aria-selected="false">Detalhes Pedido</a>
 	</li>
 	</ul>
 	<div class="tab-content" id="myTabContent">
@@ -41,58 +42,26 @@
 
 		<article class=" mb-3">
 					<div class="card-body">
-						<table class="table table-hover">
+						<table class="table">
 
 					<thead class="thead titulo-tabela">
 						<tr>
-						<th width="100px">N° Pedido</th>
-						<th>Data</th>
-						<th>Pedido</th>
-						<th>Data</th>
+						<th>Data do Pedido</th>
+						<th>Total da Compra</th>
+						<th></th>
 
-						<th>Valor</th>
 						</tr>
 					</thead>
 
 					<tbody>
-
-					<?php
-                        @$pedido = $_SESSION['pedido'];
-
-                        if($pedido === null || empty($pedido->getItems())){
-                            // Inicio HTML
-                            ?><tr>
-								<td></td>
-                                  <td><p class="mx-auto">Voce não tem pedidos</p></td>
-                                  </tr>
-                            <?php
-                            // Fim HTML
-                        }else{
-
-                            foreach ($lista->getItems() as $pedido){
-                                
-                                $lista = $pedido->getProduto();
-                                
-                                
-                               // $link = ".$url./petcustoms/carrinho/remover/".$produto->getId();
-                            
-                                // Inicio HTML
-                            ?>
-
+	<?php foreach ($pedidos as $pedido) { ?>
 						<tr>
-						<th scope="row"><?php echo $_SESSION['idpedido'];?></th>
-						<td>1</td>
-						<td>1</td>
-						<td>Jacob</td>
-						<td>Thornton</td>
+
+						<th scope="row"><?php echo $pedido['data_pedido'] ?></th>
+						<td>R$ <?php echo  number_format($pedido['total'],2, ",",","); ?></td>
+						<td> <a name="" id="" class="btn btn-warning titulo-tabela" href="#" role="button">Detalhes</a></td>
 						</tr>
-
-						<?php   
-                    // Fim HTML
-                            }
-                        }
-                    ?>
-
+	<?php } ?>
 					</tbody>
 
 				</table>
@@ -100,60 +69,102 @@
 			</article> <!-- card.// -->
 
 	<!-- TABELA PEDIDOS-->
-
 	</div>
 
-<div class="tab-pane fade" id="perfil" role="tabpanel" aria-labelledby="profile-tab">
-	<form class="form-signin" method="post" action="">
-                       
-<div class="form-label-group">
-	<input type="text" id="usuario" name="nome" class="form-control" required autofocus>
-		<label for="inputUserame">Nome completo</label>
-</div>
+			<div class="tab-pane fade" id="perfil" role="tabpanel" aria-labelledby="profile-tab">
+			<article class=" mb-3">
 
-<div class="form-label-group">
-	<input type="text" id="nascimento"  name="nascimento" class="form-control" required>
-		<label for="inputNascimento">Data de nascimento</label>
-</div>
+			<form class="form-horizontal">
+<fieldset>
 
-<div class="form-label-group">
-	<input type="text" id="cpf" name="cpf" class="form-control" required>
-		<label for="inputCpf">CPF</label>
-</div>
+				<!-- Form Name -->
+				<!-- Text input-->
+				<div class="form-group">
+				<label class="col-md-4 control-label" for="id">Id</label>  
+				<div class="col-md-2">
+				<input id="id" name="id" type="text" value="<?php echo $produto['id'] ?>"  disabled="disabled" placeholder="Id do pedido" class="form-control input-md">
+					
+				</div>
+				</div>
 
-<div class="form-label-group">
-	<input type="email" id="email" name="email" class="form-control" required>
-		<label for="inputEmail">Email</label>
-</div>
+				<!-- Text input-->
+				<div class="form-group">
+				<label class="col-md-4 control-label" for="datacompra">Data da Compra</label>  
+				<div class="col-md-4">
+				<input id="datacompra" disabled="disabled" value="<?php echo $detalhe['data_pedido'] ?>" name="datacompra" type="text" placeholder="Data da Compra" class="form-control input-md">
+					
+				</div>
+				</div>
 
-<div class="form-label-group">
-	<input type="password" id="senha" name="senha" class="form-control" required>
-		<label for="inputPassword">Senha</label>
-</div>
+				<!-- Text input-->
+				<div class="form-group">
+				<label class="col-md-4 control-label" for="frete">Frete</label>  
+				<div class="col-md-4">
+				<input id="frete" disabled="disabled" name="frete" type="text" placeholder="Frete" class="form-control input-md">
+					
+				</div>
+				</div>
 
-<div class="form-label-group">
-	<input type="text" id="telefone" name="telefone" class="form-control"  required>
-		<label for="inputTelefone">Telefone</label>
-</div>
-					   
-<div class="form-label-group">
-	<input type="text" id="estado"  name="estado" class="form-control"  required>
-		<label for="inputEstado">Estado</label>
-</div>
+				<!-- Text input-->
+				<div class="form-group">
+				<label class="col-md-4 control-label" for="prazo">Prazo</label>  
+				<div class="col-md-4">
+				<input id="prazo" disabled="disabled" value="<?php echo $dados['dias']."dias"; ?>" name="prazo" type="text" placeholder="Prazo" class="form-control input-md">
+					
+				</div>
+				</div>
 
-<div class="form-label-group">
-	<input type="text" id="cep" name="cep" class="form-control" required>
-		<label for="inputCep">CEP</label>
-</div>
+				<!-- Text input-->
+				<div class="form-group">
+				<label class="col-md-4 control-label" for="total">Total</label>  
+				<div class="col-md-4">
+				<input id="total" disabled="disabled" value="R$ <?php echo  number_format($detalhe['preco'],2, ",",","); ?>" name="total" type="text" placeholder="Total do Pedido" class="form-control input-md">
+					
+				</div>
+				</div>
 
-<div class="form-label-group">
-	<input type="text" id="endereco"  name="endereco" class="form-control" required>
-		<label for="inputEndereco">Endereço</label>
-</div>
+				</fieldset>
+				</form>
+				<hr>
+				<article class=" mb-3">
+					<div class="card-body">
+						<table class="table">
 
-<button class="btn btn-lg btn-warning btn-block text-uppercase texto-botao" type="submit" name="cadastrar" id="cadastrar">Atualizar</button>
-</div>
-	</div>
+					<thead class="thead titulo-tabela">
+						<tr>
+						<th></th>
+						<th>Nome Produto</th>
+						<th>Quantidade</th>
+						<th>Valor</th>
+
+						</tr>
+					</thead>
+
+					<tbody>
+
+					<?php foreach($produtos as $produto) { ?>
+						<tr>
+						<th scope="row"><img width="50px" src="<?php echo $url;['imagem']?>/View/img/produtos/<?php echo $produto['imagem'] ?>" /></th>
+						<td><?php echo $produto['nome'] ?></td>
+						<td><?php echo $produto['quantidade'] ?></a></td>
+						<td><?php echo  number_format($detalhe['preco'],2, ",",","); ?></td>
+						</tr>
+					<?php } ?>
+
+					</tbody>
+
+				</table>
+				</div> <!-- card-body .// -->
+			</article> <!-- card.// -->
+
+
+	
+			</div> <!-- card-body .// -->
+			</article> <!-- card.// -->
+
+	<!-- TABELA PEDIDOS-->
+
+
 			</div> <!-- card-body .// -->
 		</article> <!-- card.// -->
 

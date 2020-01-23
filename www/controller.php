@@ -138,7 +138,16 @@
 
         case 'painelcliente':
             \LOJA\Includes\Seguranca::restritoCliente();
-            
+            $obj = new \LOJA\API\PedidoListar;
+            $pedidos = $obj->lista;
+            $view = "painel-cliente.php";
+            break;
+        
+        case 'painelpedido':
+            \LOJA\Includes\Seguranca::restritoCliente();
+            $obj = new \LOJA\API\PedidoVisualiza;
+            $dados = $obj->dados;
+            $produtos = $obj->produtos;
             $view = "painel-cliente.php";
             break;
 

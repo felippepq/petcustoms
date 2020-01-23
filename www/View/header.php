@@ -547,7 +547,7 @@ h4 {
 
         <nav class="navbar navbar-expand-lg navbar-light bg-warning shadow fixed-top">
         <div class="container">
-        <a class="navbar-brand"  href="<?php echo $url; ?>/home/">PetCustoms</a>
+        <a class="navbar-brand"  href="<?php echo $url; ?>/home/"><img  width="150px" src="../Img/logo-1teste.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
         <span class="navbar-toggler-icon"></span>
         </button>

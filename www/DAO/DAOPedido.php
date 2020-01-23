@@ -46,44 +46,76 @@ class DAOPedido{
         }    
     }
 
-    public function listarPedidoCliente($idCliente)
-    {
-        $sql = "SELECT pedido.data_pedido, SUM(produto.preco*item.quantidade) as total
+    public function listarPedidoCliente($idCliente){
+
+        $sql = "SELECT 
+        pedido.pk_pedido,
+        pedido.data_pedido, 
+        SUM(produto.preco*item.quantidade) as total
         FROM pedido INNER JOIN cliente
         on pedido.fk_cliente = cliente.pk_cliente
         inner join item
         on item.fk_pedido = pedido.pk_pedido
         inner join produto
         on produto.pk_produto = item.fk_produto
-        where cliente.pk_cliente = id";
+        where cliente.pk_cliente = :id
+        group by pedido.pk_pedido";
 
+        $con = Conexao::getInstance()->prepare($sql);
+        $con->bindValue(":id", $idCliente);
+        $con->execute();
+        $lista= array();
+
+        while($pedido = $con->fetch(\PDO::FETCH_ASSOC)){
+            $lista[] = $pedido;
+        }
+        return $lista;
+        }
+
+    public function listarItens($idPedido){
+
+            $sql = "SELECT * FROM item
+            INNER JOIN produto
+            ON produto.pk_produto = item.fk_produto
+            WHERE fk_pedido = :id";
     
+            $con = Conexao::getInstance()->prepare($sql);
+            $con->bindValue(":id", $idPedido);
+            $con->execute();
+            $lista= array();
+    
+            while($pedido = $con->fetch(\PDO::FETCH_ASSOC)){
+                $lista[] = $pedido;
+            }
+            return $lista;
+        }       
 
-    $con = Conexao::getInstance()->prepare($sql);
-    $con->bindValue(":id", $idCliente);
-    $result = $con->execute();
-    }
 
-    public function PedidoDetalhado($detalhePedido)
+    public function detalhaPedido($idPedido)
     {
         // DETALHA UM PEDIDO
       
-      $sql ="SELECT 
-      pedido.data_pedido,
-      pedido.frete,
-      produto.nome,
-      produto.preco
+        $sql = "SELECT 
+        pedido.pk_pedido,
+        pedido.data_pedido,
+        pedido.frete,
+        pedido.dias, 
+        SUM(produto.preco*item.quantidade) as total
+        FROM pedido INNER JOIN cliente
+        on pedido.fk_cliente = cliente.pk_cliente
+        inner join item
+        on item.fk_pedido = pedido.pk_pedido
+        inner join produto
+        on produto.pk_produto = item.fk_produto
+        where pedido.pk_pedido = :id";
+
+        $con = Conexao::getInstance()->prepare($sql);
+        $con->bindValue(":id", $idPedido);
+        $con->execute();
+        $pedido = $con->fetch->fetch(\PDO::FETCH_ASSOC);
+
+        return $pedido;
       
-          FROM pedido INNER JOIN cliente
-          ON pedido.fk_cliente = cliente.pk_cliente
-
-          INNER JOIN item
-          ON item.fk_pedido = pedido.pk_pedido
-
-          INNER JOIN produto
-          ON produto.pk_produto = item.fk_produto
-          
-          WHERE pedido.pk_pedido = :id";
           
     }
 
