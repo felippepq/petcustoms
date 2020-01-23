@@ -95,7 +95,6 @@
                         }
                     ?>
 
-
 					</tbody>
 
 				</table>
@@ -106,10 +105,56 @@
 
 	</div>
 
-	<div class="tab-pane fade" id="perfil" role="tabpanel" aria-labelledby="profile-tab">
-	2
-	</div>
+<div class="tab-pane fade" id="perfil" role="tabpanel" aria-labelledby="profile-tab">
+	<form class="form-signin" method="post" action="">
+                       
+<div class="form-label-group">
+	<input type="text" id="usuario" name="nome" class="form-control" required autofocus>
+		<label for="inputUserame">Nome completo</label>
+</div>
 
+<div class="form-label-group">
+	<input type="text" id="nascimento"  name="nascimento" class="form-control" required>
+		<label for="inputNascimento">Data de nascimento</label>
+</div>
+
+<div class="form-label-group">
+	<input type="text" id="cpf" name="cpf" class="form-control" required>
+		<label for="inputCpf">CPF</label>
+</div>
+
+<div class="form-label-group">
+	<input type="email" id="email" name="email" class="form-control" required>
+		<label for="inputEmail">Email</label>
+</div>
+
+<div class="form-label-group">
+	<input type="password" id="senha" name="senha" class="form-control" required>
+		<label for="inputPassword">Senha</label>
+</div>
+
+<div class="form-label-group">
+	<input type="text" id="telefone" name="telefone" class="form-control"  required>
+		<label for="inputTelefone">Telefone</label>
+</div>
+					   
+<div class="form-label-group">
+	<input type="text" id="estado"  name="estado" class="form-control"  required>
+		<label for="inputEstado">Estado</label>
+</div>
+
+<div class="form-label-group">
+	<input type="text" id="cep" name="cep" class="form-control" required>
+		<label for="inputCep">CEP</label>
+</div>
+
+<div class="form-label-group">
+	<input type="text" id="endereco"  name="endereco" class="form-control" required>
+		<label for="inputEndereco">Endereço</label>
+</div>
+
+<button class="btn btn-lg btn-warning btn-block text-uppercase texto-botao" type="submit" name="cadastrar" id="cadastrar">Atualizar</button>
+</div>
 	</div>
 			</div> <!-- card-body .// -->
 		</article> <!-- card.// -->
@@ -125,6 +170,5 @@
 </div>
 </div>
 </div>
-
 
 <?php  include "view/footer.php"?>
