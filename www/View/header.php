@@ -27,11 +27,23 @@
         border-color: #6f42c1!important;
     }
 
-    .titulo-tabela:hover{
-        background-color: #ffc107!important;
+	.calcular{
+		background-color: #ffc107!important;
         color: #6f42c1!important;
         border-color: #ffc107!important;
+	}
+
+    .calcular:hover{
+        background-color: #6f42c1!important;
+        color: #ffc107!important;
+        border-color: #6f42c1!important;
     }
+
+	.voltar:hover{
+		background-color: #6f42c1!important;
+        color: #ffc107!important;
+        border-color: #6f42c1!important;
+	}
     
     .nome-produto{
         font-size: 15px;

@@ -45,7 +45,6 @@
                                 
                                 $produto = $item->getProduto();
                                 
-                                
                                 $link = ".$url./carrinho/remover/".$produto->getId();
                             
                                 // Inicio HTML
@@ -67,18 +66,16 @@
   </tbody> 
 </table>
 
-
-
 <div class="card-body">
 
     <?php if(isset($_SESSION['frete'])){ ?>
 
-        <a href="#" class="btn btn-light float-left"> <i class="fa fa-chevron-left"></i> Voltar </a> 
+        <a href="<?php echo $url; ?>/produtos/" class="voltar btn btn-warning float-left"> <i class="fa fa-chevron-left"></i> Voltar </a> 
             <a href="<?php echo $url; ?>/pedido/finalizar/" class="btn btn-warning botao-carrinho float-right"> Finalizar Compra <i class="fa fa-chevron-right"></i> </a>
         </div>
         
                     <?php }else{ ?>
-                        <a href="#" class="btn btn-light float-left"> <i class="fa fa-chevron-left"></i> Voltar </a> 
+                        <a href="<?php echo $url; ?>/produtos/" class="voltar btn btn-warning float-left"> <i class="fa fa-chevron-left"></i> Voltar </a> 
             <a href="<?php echo $url; ?>/pedido/finalizar/" class="btn btn-warning botao-carrinho float-right disabled"> Finalizar Compra <i class="fa fa-chevron-right"></i> </a>
         </div>
 
@@ -100,7 +97,7 @@
 					<div class="input-group">
 						<input type="text" class="form-control" name="cep" placeholder="Digite o CEP">
 						<span class="input-group-append"> 
-							<button class="btn btn-warning titulo-tabela">Calcular</button>
+							<button class="btn btn-warning calcular">Calcular</button>
 						</span>
 					</div>
 				</div>
