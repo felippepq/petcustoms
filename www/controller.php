@@ -86,7 +86,7 @@
 
         case 'produtolistar':
             LOJA\Includes\Seguranca::restritoAdm();
-            $obj = new \LOJA\API\ProdutoListar;
+            $obj = new \LOJA\API\ProdutoListarHome;
             $lista = $obj->lista;
             $view = "lista-produto.php";
             break;
@@ -149,6 +149,13 @@
             $dados = $obj->dados;
             $produtos = $obj->produtos;
             $view = "painel-pedido.php";
+            break;
+
+        case 'atualizacliente':
+            \LOJA\Includes\Seguranca::restritoCliente();
+            $obj = new \LOJA\API\ClienteCadastrar;
+            $msg = $obj->msg;
+            $view = "painel-atualiza-cliente.php";
             break;
 
         case 'logincliente':

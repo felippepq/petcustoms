@@ -22,33 +22,14 @@
     </div>
 </div>
 
+<div class="container">
+
 <div class="container frete">
 	<a href ="<?php echo $url; ?>/regulamento/"><img src ="../Img/Frete.png" class="img-responsive img-fluid mx-auto col-12"/></a>
     </div>
 
-<<<<<<< HEAD
- 	<!--- INICIO PAINEL DE OFERTAS --->
-    <div class="container">
-	<div class="row">
-=======
-    <!--- PAINEL DE OFERTAS --->
+	<h2>Produtos <b>Em Ofertas</b></h2>
 
->>>>>>> 5a0a79ed1d40f57edd3ffd0a6b51d69888a229de
-	
-<div class="container">
-	<div class="row">
-		<div class="col-md-12">
-			<h2>Produtos em <b>Oferta</b></h2>
-<<<<<<< HEAD
-            
-			<?php foreach($lista as $produto) { ?>
-
-	
-			<?php } ?>
-
-
-
-=======
 
 <div id="carousel3d">
   	<carousel-3d :perspective="0" :space="200" :display="5" :controls-visible="true" :controls-prev-html="'❬'" :controls-next-html="'❭'" :controls-width="30" :controls-height="60" :clickable="true" :autoplay="true" :autoplay-timeout="5000">
@@ -101,7 +82,6 @@
 	}
 })
 </script>
->>>>>>> 5a0a79ed1d40f57edd3ffd0a6b51d69888a229de
 
  	<!--- FIM PAINEL DE OFERTAS --->
 
@@ -122,6 +102,7 @@
 		<a href="<?php echo $url; ?>/cat/dono/" class="stretched-link"></a>
 	</div>
 	</div>
+	<div class="container">
 	
 		<h2>Adote seu <b>Pet</b></h2>
 
@@ -170,12 +151,13 @@
 		</div>
 	</div>
 </div>
-
+</div>
 
 
 
 		</div>
 	</div>
+</div>
 </div>
 
 <?php include "view/footer.php"?>
