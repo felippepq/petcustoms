@@ -107,12 +107,13 @@ class DAOPedido{
         on item.fk_pedido = pedido.pk_pedido
         inner join produto
         on produto.pk_produto = item.fk_produto
+        
         where pedido.pk_pedido = :id";
 
         $con = Conexao::getInstance()->prepare($sql);
         $con->bindValue(":id", $idPedido);
         $con->execute();
-        $pedido = $con->fetch->fetch(\PDO::FETCH_ASSOC);
+        $pedido = $con->fetch(\PDO::FETCH_ASSOC);
 
         return $pedido;
       

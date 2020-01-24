@@ -148,7 +148,7 @@
             $obj = new \LOJA\API\PedidoVisualiza;
             $dados = $obj->dados;
             $produtos = $obj->produtos;
-            $view = "painel-cliente.php";
+            $view = "painel-pedido.php";
             break;
 
         case 'logincliente':

@@ -16,7 +16,7 @@ use  LOJA\Model\Cliente;
                 try{
                     $DAO = new DAOPedido();
                     $this->dados = $DAO->detalhaPedido($_GET['id']);
-                    $this->produtos = $DAO->listaItens($_GET['id']);
+                    $this->produtos = $DAO->listarItens($_GET['id']);
 
 
                 }catch(\Exception $e){
