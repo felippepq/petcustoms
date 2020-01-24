@@ -28,300 +28,63 @@
 
     <!--- PAINEL DE OFERTAS --->
 
-    <div class="container">
-	<div class="row">
 	
+<div class="container">
+	<div class="row">
 		<div class="col-md-12">
 			<h2>Produtos em <b>Oferta</b></h2>
-			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
-            <!-- carousel items -->
-            
-			<div class="carousel-inner">
-				<div class="item carousel-item active">
-					<div class="row">
 
-						<div class="col-sm-3">
-							<div class="thumb-wrapper">
-								<div class="img-box">
-									<img src="../Img/produto2.jpg" class="img-responsive img-fluid" alt="">
-								</div>
-								<div class="thumb-content">
-									<h4>Blusa cachorro</h4>
-									<p class="item-price"><strike>R$100,00</strike> <span>R$80,00</span></p>
-									<div class="star-rating">
-										<ul class="list-inline">
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-										</ul>
-									</div>
-								</div>		
+<div id="carousel3d">
+  	<carousel-3d :perspective="0" :space="200" :display="5" :controls-visible="true" :controls-prev-html="'❬'" :controls-next-html="'❭'" :controls-width="30" :controls-height="60" :clickable="true" :autoplay="true" :autoplay-timeout="5000">
+    	<slide :index="0">
+      		<span class="title">Web Development</span>
+     			<a href="#">Detalhes do item</a>
+</slide>
 
-							</div>
-						</div>
+<slide :index="1">
+	<span class="title">Web Design</span>
+    	<a href="#">Detalhes do item</a>
+</slide>
 
+<slide :index="2">
+    <span class="title">You know</span>
+   		<a href="#">Detalhes do item</a>
+</slide>
 
+<slide :index="3">
+    <span class="title">You know</span>
+      	<a href="#">Detalhes do item</a>
+</slide>
 
+<slide :index="4">
+    <span class="title">You know</span>
+ 		<a href="#">Detalhes do item</a>
+</slide>
 
+<slide :index="5">
+    <span class="title">You know</span>
+    	<a href="#">Detalhes do item</a>
+</slide>
 
+<slide :index="6">
+    <span class="title">You know</span>
+    	<a href="#">Detalhes do item</a>
+</slide>	
+	</carousel-3d>
+</div>
 
-						<div class="col-sm-3">
-							<div class="thumb-wrapper">
-								<div class="img-box">
-									<img src="../Img/produto1.jpg" class="img-responsive img-fluid" alt="">
-								</div>
-								<div class="thumb-content">
-									<h4>Kit família</h4>
-									<p class="item-price"><strike>R$150,00</strike> <span>R$100,00</span></p>
-									<div class="star-rating">
-										<ul class="list-inline">
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-										</ul>
-									</div>
-					
-								</div>						
-							</div>
-						</div>	
-						
-						
-
-
-						<div class="col-sm-3">
-							<div class="thumb-wrapper">
-								<div class="img-box">
-									<img src="../Img/produto3.jpg" class="img-responsive img-fluid" alt="">
-								</div>
-								<div class="thumb-content">
-									<h4>Body</h4>
-									<p class="item-price"><strike>R$115,00</strike> <span>R$80,00</span></p>
-									<div class="star-rating">
-										<ul class="list-inline">
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
-										</ul>
-									</div>
-			
-								</div>						
-							</div>
-						</div>								
-						<div class="col-sm-3">
-							<div class="thumb-wrapper">
-								<div class="img-box">
-									<img src="../Img/produto4.jpg" class="img-responsive img-fluid" alt="">
-								</div>
-								<div class="thumb-content">
-									<h4>Almofada</h4>
-									<p class="item-price"><strike>R$50,00</strike> <span>R$30,00</span></p>
-									<div class="star-rating">
-										<ul class="list-inline">
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-										</ul>
-									</div>
-					
-								</div>						
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item carousel-item">
-					<div class="row">
-						<div class="col-sm-3">
-							<div class="thumb-wrapper">
-								<div class="img-box">
-									<img src="../Img/produto5.jpg" class="img-responsive img-fluid" alt="">
-								</div>
-								<div class="thumb-content">
-									<h4>Capa celular</h4>
-									<p class="item-price"><strike>R$100,00</strike> <span>R$70,00</span></p>
-									<div class="star-rating">
-										<ul class="list-inline">
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-										</ul>
-									</div>
-				
-								</div>						
-							</div>
-						</div>
-						<div class="col-sm-3">
-							<div class="thumb-wrapper">
-								<div class="img-box">
-									<img src="../Img/produto6.jpg" class="img-responsive img-fluid" alt="">
-								</div>
-								<div class="thumb-content">
-									<h4>Camiseta cachorro</h4>
-									<p class="item-price"><strike>R$100,00</strike> <span>R$80,00</span></p>
-									<div class="star-rating">
-										<ul class="list-inline">
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
-										</ul>
-									</div>
-					
-								</div>						
-							</div>
-						</div>
-						<div class="col-sm-3">
-							<div class="thumb-wrapper">
-								<div class="img-box">
-									<img src="../Img/produto7.jpg" class="img-responsive img-fluid" alt="">
-								</div>
-								<div class="thumb-content">
-									<h4>Roupa cachorro</h4>
-									<p class="item-price"><strike>R$120,00</strike> <span>R$90,00</span></p>
-									<div class="star-rating">
-										<ul class="list-inline">
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-										</ul>
-									</div>
-			
-								</div>						
-							</div>
-						</div>
-						<div class="col-sm-3">
-							<div class="thumb-wrapper">
-								<div class="img-box">
-									<img src="../Img/mousepad.jpg" class="img-responsive img-fluid" alt="">
-								</div>
-								<div class="thumb-content">
-									<h4>Mousepad</h4>
-									<p class="item-price"><strike>R$40,00</strike> <span>R$25,00</span></p>
-									<div class="star-rating">
-										<ul class="list-inline">
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-										</ul>
-									</div>
-						
-								</div>						
-							</div>
-						</div>						
-					</div>
-				</div>
-				<div class="item carousel-item">
-					<div class="row">
-						<div class="col-sm-3">
-							<div class="thumb-wrapper">
-								<div class="img-box">
-									<img src="../Img/blusa cat.jpg" class="img-responsive img-fluid" alt="">
-								</div>
-								<div class="thumb-content">
-								<h4>Canon DSLR</h4>
-									<p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
-									<div class="star-rating">
-										<ul class="list-inline">
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-										</ul>
-									</div>
-						
-								</div>						
-							</div>
-						</div>
-						<div class="col-sm-3">
-							<div class="thumb-wrapper">
-								<div class="img-box">
-									<img src="../Img/blusa1.jpg" class="img-responsive img-fluid" alt="">
-								</div>
-								<div class="thumb-content">
-									<h4>Canon DSLR</h4>
-									<p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
-									<div class="star-rating">
-										<ul class="list-inline">
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-										</ul>
-									</div>
-						
-								</div>						
-							</div>
-						</div>
-						<div class="col-sm-3">
-							<div class="thumb-wrapper">
-								<div class="img-box">
-									<img src="../Img/blusa frente mas.jpg" class="img-responsive img-fluid" alt="">
-								</div>
-								<div class="thumb-content">
-									<h4>Google Pixel</h4>
-									<p class="item-price"><strike>$450.00</strike> <span>$418.00</span></p>
-									<div class="star-rating">
-										<ul class="list-inline">
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-										</ul>
-									</div>
-								
-								</div>						
-							</div>
-						</div>	
-						<div class="col-sm-3">
-							<div class="thumb-wrapper">
-								<div class="img-box">
-									<img src="../Img/blusa costa mas.jpg" class="img-responsive img-fluid" alt="">
-								</div>
-								<div class="thumb-content">
-									<h4>Apple Watch</h4>
-									<p class="item-price"><strike>$350.00</strike> <span>$330.00</span></p>
-									<div class="star-rating">
-										<ul class="list-inline">
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-										</ul>
-									</div>
-									
-								</div>						
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Carousel controls -->
-			<a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
-				<i class="fa fa-angle-left"></i>
-			</a>
-			<a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
-				<i class="fa fa-angle-right"></i>
-			</a>
-
-		</div>
+<script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.7/vue.js'></script><script src='https://rawgit.com/Wlada/vue-carousel-3d/master/dist/vue-carousel-3d.min.js'></script>
+	<script >new Vue({
+  	el: '#carousel3d',
+  	data: {
+    slides: 7
+},
+  	components: {
+'carousel-3d': Carousel3d.Carousel3d,
+'slide': Carousel3d.Slide
+	}
+})
+</script>
 
  	<!--- FIM PAINEL DE OFERTAS --->
 

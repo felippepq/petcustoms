@@ -9,8 +9,38 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
     <link rel="icon" type="imagem/png" href="../Img/logo.png" />
-    <style>
-        
+    <style class="cp-pen-styles">#carousel3d .carousel-3d-slide {
+
+/* carousel produtos em oferta */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 1;
+		-ms-flex: 1;
+			flex: 1;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+			flex-direction: column;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	text-align: center;
+	background-color: #fff;
+	padding: 10px;
+	-webkit-transition: all .4s;
+	transition: all .4s;
+	}
+	#carousel3d .carousel-3d-slide.current {
+	background-color: #333;
+	color: #fff;
+	}
+	#carousel3d .carousel-3d-slide.current span {
+	font-size: 20px;
+	font-weight: 500;
+	}
+        /* FIM carousel produtos em oferta */
+
     a{
         color: #6f42c1!important;
     }
