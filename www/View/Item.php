@@ -10,7 +10,6 @@
       <div class="row wow fadeIn">
 
 
-
         <div class="col-md-6 mb-4">
 
           <img src="<?php echo $url; ?>/View/img/produtos/<?php echo $detalhe['imagem'] ?>" class="img-fluid" alt="">
@@ -41,7 +40,7 @@
 
             <form class="d-flex justify-content-left">
               <!-- Default input -->
-              <a href="<?php echo $url ?>/carrinho/adicionar/<?php echo $detalhe['id'] ?>" class="btn btn-primary titulo-tabela btn-md my-0 p text-center" type="submit">Adicionar ao Carrinho
+              <a href="<?php echo $url ?>/carrinho/adicionar/<?php echo $detalhe['nome'] ?>" class="btn btn-primary titulo-tabela btn-md my-0 p text-center"  type="submit">Adicionar ao Carrinho
                 <i class="fas fa-shopping-cart ml-1"></i>
       </a>
 

@@ -26,12 +26,20 @@
 	<a href ="<?php echo $url; ?>/regulamento/"><img src ="../Img/Frete.png" class="img-responsive img-fluid mx-auto col-12"/></a>
     </div>
 
+<<<<<<< HEAD
  	<!--- INICIO PAINEL DE OFERTAS --->
     <div class="container">
 	<div class="row">
+=======
+    <!--- PAINEL DE OFERTAS --->
+
+>>>>>>> 5a0a79ed1d40f57edd3ffd0a6b51d69888a229de
 	
+<div class="container">
+	<div class="row">
 		<div class="col-md-12">
 			<h2>Produtos em <b>Oferta</b></h2>
+<<<<<<< HEAD
             
 			<?php foreach($lista as $produto) { ?>
 
@@ -40,6 +48,60 @@
 
 
 
+=======
+
+<div id="carousel3d">
+  	<carousel-3d :perspective="0" :space="200" :display="5" :controls-visible="true" :controls-prev-html="'❬'" :controls-next-html="'❭'" :controls-width="30" :controls-height="60" :clickable="true" :autoplay="true" :autoplay-timeout="5000">
+    	<slide :index="0">
+      		<span class="title">Web Development</span>
+     			<a href="#">Detalhes do item</a>
+</slide>
+
+<slide :index="1">
+	<span class="title">Web Design</span>
+    	<a href="#">Detalhes do item</a>
+</slide>
+
+<slide :index="2">
+    <span class="title">You know</span>
+   		<a href="#">Detalhes do item</a>
+</slide>
+
+<slide :index="3">
+    <span class="title">You know</span>
+      	<a href="#">Detalhes do item</a>
+</slide>
+
+<slide :index="4">
+    <span class="title">You know</span>
+ 		<a href="#">Detalhes do item</a>
+</slide>
+
+<slide :index="5">
+    <span class="title">You know</span>
+    	<a href="#">Detalhes do item</a>
+</slide>
+
+<slide :index="6">
+    <span class="title">You know</span>
+    	<a href="#">Detalhes do item</a>
+</slide>	
+	</carousel-3d>
+</div>
+
+<script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.7/vue.js'></script><script src='https://rawgit.com/Wlada/vue-carousel-3d/master/dist/vue-carousel-3d.min.js'></script>
+	<script >new Vue({
+  	el: '#carousel3d',
+  	data: {
+    slides: 7
+},
+  	components: {
+'carousel-3d': Carousel3d.Carousel3d,
+'slide': Carousel3d.Slide
+	}
+})
+</script>
+>>>>>>> 5a0a79ed1d40f57edd3ffd0a6b51d69888a229de
 
  	<!--- FIM PAINEL DE OFERTAS --->
 
