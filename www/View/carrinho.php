@@ -1,10 +1,7 @@
 <?php include "view/header.php"?>
 
-    <div class="jumbotron">
-        <div class="container mt-5">
-        <h2>Produtos em <b>Oferta</b></h2>
-        </div>
-    </div>
+        <h2>Carrinho de <b>Compras</b></h2>
+
 
     <section class="section-content padding-y">
 <div class="container">

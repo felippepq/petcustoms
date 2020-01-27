@@ -4,6 +4,7 @@ namespace LOJA\API;
 use LOJA\DAO\DAOProduto;
 
 class ProdutoBuscar{
+    
     public $produto; 
     
 

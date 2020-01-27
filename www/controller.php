@@ -93,9 +93,9 @@
 
         case 'produtobuscar':
             $obj = new \LOJA\API\ProdutoBuscar;
-           // $lista = $obj->lista;
+            $lista = $obj->lista;
             $produto = $obj->produto;
-            $view = "resultado-busca.php";
+            $view = "item.php";
             break;
 
         case 'loginadmin':
@@ -121,6 +121,8 @@
         ///////////////// PAINEL DO ADMINISTRADOR /////////////////
 
         case 'home':
+            $obj = new \LOJA\API\ProdutoListarHome;
+            $lista = $obj->lista;
             $view = "index.php";
             break;      
 
@@ -151,11 +153,11 @@
             $view = "painel-pedido.php";
             break;
 
-        case 'atualizacliente':
+        case 'editarcliente':
             \LOJA\Includes\Seguranca::restritoCliente();
-            $obj = new \LOJA\API\ClienteCadastrar;
+            $obj = new \LOJA\API\ClienteEditar;
             $msg = $obj->msg;
-            $view = "painel-atualiza-cliente.php";
+            $view = "painel-editar-cliente.php";
             break;
 
         case 'logincliente':

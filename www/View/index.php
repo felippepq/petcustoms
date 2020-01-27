@@ -1,5 +1,7 @@
 <?php include "view/header.php"?>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin-top: 50px;">
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                 	<img class="d-block w-100 img-responsive" src="../Img/petcustoms.png" alt="First slide">
@@ -30,58 +32,29 @@
 
 	<h2>Produtos <b>Em Ofertas</b></h2>
 
-
-<div id="carousel3d">
-  	<carousel-3d :perspective="0" :space="200" :display="5" :controls-visible="true" :controls-prev-html="'❬'" :controls-next-html="'❭'" :controls-width="30" :controls-height="60" :clickable="true" :autoplay="true" :autoplay-timeout="5000">
-    	<slide :index="0">
-      		<span class="title">Web Development</span>
-     			<a href="#">Detalhes do item</a>
-</slide>
-
-<slide :index="1">
-	<span class="title">Web Design</span>
-    	<a href="#">Detalhes do item</a>
-</slide>
-
-<slide :index="2">
-    <span class="title">You know</span>
-   		<a href="#">Detalhes do item</a>
-</slide>
-
-<slide :index="3">
-    <span class="title">You know</span>
-      	<a href="#">Detalhes do item</a>
-</slide>
-
-<slide :index="4">
-    <span class="title">You know</span>
- 		<a href="#">Detalhes do item</a>
-</slide>
-
-<slide :index="5">
-    <span class="title">You know</span>
-    	<a href="#">Detalhes do item</a>
-</slide>
-
-<slide :index="6">
-    <span class="title">You know</span>
-    	<a href="#">Detalhes do item</a>
-</slide>	
-	</carousel-3d>
-</div>
-
-<script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.7/vue.js'></script><script src='https://rawgit.com/Wlada/vue-carousel-3d/master/dist/vue-carousel-3d.min.js'></script>
-	<script >new Vue({
-  	el: '#carousel3d',
-  	data: {
-    slides: 7
-},
-  	components: {
-'carousel-3d': Carousel3d.Carousel3d,
-'slide': Carousel3d.Slide
-	}
-})
-</script>
+	<div class="row px-3">
+                
+				<?php foreach($lista as $produto) { ?>
+			
+					<div class="col-12 col-sm-8 col-md-6 col-lg-4">
+						 <div class="card shadow-sm mt-2">
+							<img class="w-100 mt-2 mb-3 foto-produto" src="<?php echo $url;['imagem']?>/View/img/produtos/<?php echo $produto['imagem'] ?>" />
+				<div class="card-body">
+					<h4 class="card-title font-weight-bold nome-produto text-center"><a href="<?php echo $url; ?>/produto/item/<?php echo $produto['id'] ?>"><?php echo $produto['nome'] ?></h4>
+						 <h6 class="card-subtitle mb-2 text-muted text-center"><a href="#"><?php echo $produto['departamento'] ?></h6>
+				<div class="buy d-flex justify-content-between align-items-center">
+					<div class="price text-dark preco-produto"><h5 class="mt-4">R$ <?php echo  number_format($produto['preco'],2, ",",","); ?></h5></div>
+				<div>
+					<a href="<?php echo $url ?>/carrinho/adicionar/<?php echo $produto['id'] ?>" class="btn btn-warning mt-3 ml-2 font-weight-bold botao-carrinho"> <i  href="<?php echo $url ?>/carrinho/adicionar/<?php echo $produto['id'] ?>" class="fas fa-shopping-cart"></i> +</a>
+				</div>
+					</div>
+						</div>
+							</div>
+								</div>
+							  
+				<?php } ?>
+				 
+				</div>
 
  	<!--- FIM PAINEL DE OFERTAS --->
 

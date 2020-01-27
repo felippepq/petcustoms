@@ -1,10 +1,6 @@
 <?php include "view/header.php"?>
 
-<div class="jumbotron">
-        <div class="container mt-5">
         <h2>Painel do Cliente</h2>
-        </div>
-    </div>
 
 </section>
 <!-- ========================= SECTION INTRO END// ========================= -->
@@ -25,56 +21,40 @@
 		</ul>
 	</aside>
 
-	<div class="col-8">
+	<div class="col-9">
 	<form class="form-horizontal">
-	<fieldset>
+	<fieldset class="card-body">
 
-				<!-- Form Name -->
-				<!-- Text input-->
-				<div class="form-group">
-				<label class="col-md-4 control-label" for="id">Id</label>  
-				<div class="col-md-2">
-				<input id="id" name="id" type="text" value="<?php echo $dados['pk_pedido'] ?>"  disabled="disabled" placeholder="Id do pedido" class="form-control input-md">
-					
-				</div>
-				</div>
+	<div class="form-row">
+        <div class="col-lg-3">
+        <label class="control-label" for="id">ID Pedido:</label>  
+		<input id="id" name="id" type="text" value="<?php echo $dados['pk_pedido'] ?>"  disabled="disabled" placeholder="Id do pedido" class="form-control input-md">        </div>
+        <div class="col-lg-3">
+            <label class="control-label" for="id">Data da Compra:</label>  
+			<input id="datacompra" disabled="disabled" value="<?php echo $dados['data_pedido']; ?>" name="datacompra" type="text" placeholder="Data da Compra" class="form-control input-md">
+        </div>
+      </div>
+      <div class="form-row mt-2">
+        <div class="col-lg-3">
+        <label class="control-label" for="id">Frete:</label>  
+		<input id="frete" disabled="disabled" value="R$ <?php echo  number_format($dados['frete'],2, ",",","); ?>" name="frete" type="text" placeholder="Frete" class="form-control input-md">
+        </div>
 
-				<!-- Text input-->
-				<div class="form-group">
-				<label class="col-md-4 control-label" for="datacompra">Data da Compra</label>  
-				<div class="col-md-4">
-				<input id="datacompra" disabled="disabled" value="<?php echo $dados['data_pedido']; ?>" name="datacompra" type="text" placeholder="Data da Compra" class="form-control input-md">
-					
-				</div>
-				</div>
+        <div class="col-lg-3">
+        <label class="control-label" for="id">Prazo:</label>  
+		<input id="prazo" disabled="disabled" value="<?php echo $dados['dias']." dias"; ?>" name="prazo" type="text" placeholder="Prazo" class="form-control input-md">
+        </div>
 
-				<!-- Text input-->
-				<div class="form-group">
-				<label class="col-md-4 control-label" for="frete">Frete</label>  
-				<div class="col-md-4">
-				<input id="frete" disabled="disabled" value=" <?php echo  number_format($dados['frete'],2, ",",","); ?>" name="frete" type="text" placeholder="Frete" class="form-control input-md">
-					
-				</div>
-				</div>
 
-				<!-- Text input-->
-				<div class="form-group">
-				<label class="col-md-4 control-label" for="prazo">Prazo</label>  
-				<div class="col-md-4">
-				<input id="prazo" disabled="disabled" value="<?php echo $dados['dias']." dias"; ?>" name="prazo" type="text" placeholder="Prazo" class="form-control input-md">
-					
-				</div>
-				</div>
+	
+		<div class="col-lg-2">
+        <label class="control-label" for="id">Total:</label>  
+		<input id="total" disabled="disabled" value=" R$ <?php echo number_format($dados['total'],2, ",",","); ?>" name="total" type="text" placeholder="Total do Pedido" class="form-control input-md">
+        </div>
+		
 
-				<!-- Text input-->
-				<div class="form-group">
-				<label class="col-md-4 control-label" for="total">Total</label>  
-				<div class="col-md-4">
-				<input id="total" disabled="disabled" value="<?php echo number_format($dados['total'],2, ",",","); ?>" name="total" type="text" placeholder="Total do Pedido" class="form-control input-md">
-					
-				</div>
-				</div>
 
+      </div>
 				</fieldset>
 				</form>
 				<hr>

@@ -69,6 +69,47 @@
                 $con->execute();
                 return "Excluído Todos com sucesso";
         }
+
+        public function editarPorId(Cliente $cliente){
+
+            try {
+                
+                $sql = " UPDATE cliente SET 
+                nome = :nome, 
+                nascimento = :nascimento, 
+                cpf = :cpf, 
+                email = :email, 
+                senha = :senha, 
+                telefone = :telefone, 
+                estado = :estado, 
+                cep = :cep, 
+                endereco =:endereco, 
+                WHERE pk_cliente = :id ";
+                
+                
+                $con = Conexao::getInstance()->prepare($sql);
+
+                $con->bindValue(":id", $cliente->getPk_cliente());
+                $con->bindValue(":nome", $cliente->getNome());
+                $con->bindValue(":nascimento", $cliente->getNascimento());
+                $con->bindValue(":cpf", $cliente->getCpf());
+                $con->bindValue(":email", $cliente->getEmail());
+                $con->bindValue(":senha", $cliente->getSenha());
+                $con->bindValue(":telefone", $cliente->getTelefone());
+                $con->bindValue(":estado", $cliente->getEstado());
+                $con->bindValue(":cep", $cliente->getCep());
+                $con->bindValue(":endereco", $cliente->getEndereco());
+                $con->execute();
+    
+                echo $cliente->getNome();
+                return "Atualizado com sucesso";
+                
+    
+            } catch (\Exception $e) {
+                           
+                return "Erro ao atualizar";
+            }
+        }
             
              public function buscaPorEmailSenha(Cliente $cliente){
                 $sql = "SELECT 

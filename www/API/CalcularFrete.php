@@ -27,7 +27,8 @@ class CalcularFrete{
          $frete->setValor((float)$xml->cServico->Valor);
          $frete->setPrazoEntrega((integer)$xml->cServico->PrazoEntrega);
          
-         echo $xml->cServico->Valor;
+         //echo $xml->cServico->Valor;
+
 
          $this->frete = $frete;
 

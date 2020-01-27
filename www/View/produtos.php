@@ -1,11 +1,9 @@
-﻿<?php include "view/header.php"?>
-<div class="jumbotron">
-        <div class="container mt-5">
-        <h2>Produtos</h2>
-        </div>
-    </div>
+<?php include "view/header.php"?>
 
-<div class="container py-4 my-2 mt-5">
+        <h2>Produtos</h2>
+
+
+<div class="container py-4 my-2 ">
     <div class="row">
         <div class="col-md-3 mb-5 mb-md-0">
             <div class="py-2 px-3 card-categoria mt-5">
