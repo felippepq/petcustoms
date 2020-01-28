@@ -32,7 +32,7 @@
                         if($carrinho === null || empty($carrinho->getItems())){
                             // Inicio HTML
                             ?><tr>
-                                  <td><p><img width="100px" src="https://imagensemoldes.com.br/wp-content/uploads/2018/06/Emoji-Triste-PNG.png" class=" mx-auto img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""></p></td>
+                                  <td><p><img  src="https://www.unilabamericana.com.br/img/carrinho-vazio.jpg" class=" mx-auto img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""></p></td>
                                   </tr>
                             <?php
                             // Fim HTML
@@ -80,10 +80,6 @@
 
 </div> <!-- card.// -->
 
-<div class="alert alert-success mt-3">
-	<p class="icontext"><i class="icon text-success fa fa-truck"></i> Entrega Grátis para a região sul e sudeste.</p>
-</div>
-
 	</main> <!-- col.// -->
 	<aside class="col-md-3">
 		<div class="card rounded mb-3">
@@ -120,6 +116,10 @@
 		</div>  <!-- card .// -->
 	</aside> <!-- col.// -->
 </div>
+
+<div class="container frete">
+	<a href ="<?php echo $url; ?>/regulamento/"><img src ="../Img/Frete.png" class="img-responsive img-fluid mx-auto col-12"/></a>
+    </div>
 
 </div> <!-- container .//  -->
 </section>

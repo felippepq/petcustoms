@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
-    <link rel="icon" type="imagem/png" href="../Img/logo.png" />
-    <style class="cp-pen-styles">#carousel3d .carousel-3d-slide {
+    <link rel="shortcut icon" href="../Img/cat-dog.png" />
+    <link rel="icon" href="../Img/cat-dog.png" type="image/x-icon" />    
+
+
+<style class="cp-pen-styles">#carousel3d .carousel-3d-slide {
 
 /* carousel produtos em oferta */
 	display: -webkit-box;
@@ -374,11 +377,15 @@ a{
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-3 col-sm-4 col-md-4 col-5"> <a href="#" class="brand-wrap" data-abc="true">
-                            <img width="100px" class="logo" src="http://ampexamples.com/data/upload/2017/08/bootstrap2_logo.png"> <span class="logo"></span> </a> </div>
+                            <img width="45px" class="logo mb-1" src="../Img/logo-menu.png"> <span class="logo"></span>Pet CUSTOMS </a> </div>
                         <div class="col-lg-4 col-xl-5 col-sm-8 col-md-4 d-none d-md-block">
+
+
                             <form action="#" class="search-wrap ml-3" method="POST" action="<?php echo $url;?>/produto/buscar/">
                                 <div class="input-group w-100"> <input type="text" name="nome" class="form-control search-form" placeholder="Procure em nosso site...">
                                     <div class="input-group-append"> <button class="btn search-button" type="submit"> <i class=" icone-pesquisa fa fa-search"></i></button></div>
+
+                                    
                                 </div>
                             </form>
                         </div>

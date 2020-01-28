@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
-    <link rel="icon" type="imagem/png" href="../Img/logo.png" />
+    <link rel="shortcut icon" href="../Img/cat-dog.png" />
+    <link rel="icon" href="../Img/cat-dog.png" type="image/x-icon" />    
+
 
     <style>
     

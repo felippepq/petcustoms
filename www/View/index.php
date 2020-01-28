@@ -10,7 +10,7 @@
                 	<img class="d-block w-100" src="../Img/promoção.png" alt="Second slide">
 </div>
                 <div class="carousel-item">
-                	<img class="d-block w-100" src="../Img/adoção.png" alt="Third slide">
+                	<img class="d-block w-100" src="../Img/adocao-banner.png" alt="Third slide">
 </div>
     </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -28,36 +28,38 @@
 
 <div class="container frete">
 	<a href ="<?php echo $url; ?>/regulamento/"><img src ="../Img/Frete.png" class="img-responsive img-fluid mx-auto col-12"/></a>
-    </div>
+</div>
 
 	<h2>Produtos <b>Em Ofertas</b></h2>
 
-	<div class="row px-3">
+	
+
+	 <div class="row px-3">
                 
-				<?php foreach($lista as $produto) { ?>
 			
 					<div class="col-12 col-sm-8 col-md-6 col-lg-4">
 						 <div class="card shadow-sm mt-2">
-							<img class="w-100 mt-2 mb-3 foto-produto" src="<?php echo $url;['imagem']?>/View/img/produtos/<?php echo $produto['imagem'] ?>" />
+							<img class="w-100 mt-2 mb-3 foto-produto" src="../Img/blusa-masc.jpg" />
 				<div class="card-body">
-					<h4 class="card-title font-weight-bold nome-produto text-center"><a href="<?php echo $url; ?>/produto/item/<?php echo $produto['id'] ?>"><?php echo $produto['nome'] ?></h4>
-						 <h6 class="card-subtitle mb-2 text-muted text-center"><a href="#"><?php echo $produto['departamento'] ?></h6>
+					<h4 class="card-title font-weight-bold nome-produto text-center"><a href="<?php echo $url; ?>/produto/item/28/">Camiseta</h4>
+						 <h6 class="card-subtitle mb-2 text-muted text-center"><a href="#">Roupas</h6>
 				<div class="buy d-flex justify-content-between align-items-center">
-					<div class="price text-dark preco-produto"><h5 class="mt-4">R$ <?php echo  number_format($produto['preco'],2, ",",","); ?></h5></div>
+					<div class="price text-dark preco-produto"><h5 class="mt-4">R$ 39,90</h5></div>
 				<div>
-					<a href="<?php echo $url ?>/carrinho/adicionar/<?php echo $produto['id'] ?>" class="btn btn-warning mt-3 ml-2 font-weight-bold botao-carrinho"> <i  href="<?php echo $url ?>/carrinho/adicionar/<?php echo $produto['id'] ?>" class="fas fa-shopping-cart"></i> +</a>
+					<a href="<?php echo $url ?>/carrinho/adicionar/26/" class="btn btn-warning mt-3 ml-2 font-weight-bold botao-carrinho"> <i  href="<?php echo $url ?>/carrinho/adicionar/<?php echo $produto['id'] ?>" class="fas fa-shopping-cart"></i> +</a>
 				</div>
 					</div>
 						</div>
 							</div>
 								</div>
-							  
-				<?php } ?>
-				 
 				</div>
+					</div>
+						</div>
 
- 	<!--- FIM PAINEL DE OFERTAS --->
-
+							</div>            
+			
+<!---->
+<div class="container">
 	<h2>Categorias</h2>
 		<div class="row ">
 			<div class="card img-box mx-auto mt-3">
@@ -125,6 +127,8 @@
 	</div>
 </div>
 </div>
+</div>
+
 
 
 

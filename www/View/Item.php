@@ -1,5 +1,10 @@
 <?php  include "View/header.php"?>
 
+
+<h2><?php echo $detalhe['nome'] ?></h2>
+
+
+
 <div class="container">
 
  <!--Main layout-->
@@ -26,7 +31,6 @@
 
             <div class="mb-3">
               <a href="">
-                <span class="display-4 text-decoration-none"> <?php echo $detalhe['nome'] ?></span>
               </a>
             </div>
 
@@ -34,7 +38,7 @@
               <span>R$ <?php echo  number_format($detalhe['preco'],2, ",",","); ?></span>
             </p>
 
-            <p class="lead font-weight-bold">Descrição</p>
+            <p class="lead font-weight-bold">Descrição:</p>
 
             <p><?php echo $detalhe['descricao'] ?></p>
 
@@ -44,8 +48,10 @@
                 <i class="fas fa-shopping-cart ml-1"></i>
       </a>
 
-            </form>
 
+            </form>
+            <hr>
+<img src="../Img/card-abrigo.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
           </div>
           <!--Content-->
 
@@ -65,11 +71,9 @@
         <!--Grid column-->
         <div class="col-md-6 text-center">
 
-          <h4 class="my-4 h4">Additional information</h4>
+          <h4 class="my-4 h4">Compre e Ajude um Abrigo de Animais</h4>
 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus suscipit modi sapiente illo soluta odit
-            voluptates,
-            quibusdam officia. Neque quibusdam quas a quis porro? Molestias illo neque eum in laborum.</p>
+          <p>A cada 200 reais em compras você estará ajudando varios abrigos de animais no Rio de Janeiro </p>
 
         </div>
         <!--Grid column-->
@@ -78,33 +82,7 @@
       <!--Grid row-->
 
       <!--Grid row-->
-      <div class="row wow fadeIn">
-
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-12 mb-4">
-
-          <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/11.jpg" class="img-fluid" alt="">
-
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-6 mb-4">
-
-          <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/12.jpg" class="img-fluid" alt="">
-
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-6 mb-4">
-
-          <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/13.jpg" class="img-fluid" alt="">
-
-        </div>
-        <!--Grid column-->
-
-      </div>
+   
       <!--Grid row-->
 
     </div>

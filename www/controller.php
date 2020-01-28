@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
     use LOJA\Includes\Config;
     
     require "Includes/autoload.php";
@@ -93,7 +93,7 @@
 
         case 'produtobuscar':
             $obj = new \LOJA\API\ProdutoBuscar;
-            $lista = $obj->lista;
+          //$lista = $obj->lista;
             $produto = $obj->produto;
             $view = "item.php";
             break;
@@ -218,12 +218,6 @@
             $view = "form-cadastrar-cliente.php";
             break;
         
-        case 'produtobuscar':
-            $obj = new \LOJA\API\ProdutoBuscaNome;
-            $lista = $obj->lista;
-            $view = "resultado-busca.php";
-            break;
-        
         case 'catcachorro':
             $view = "cat-cachorro.php";
             break;
@@ -238,6 +232,10 @@
 
         case 'regulamento':
             $view = "regulamento.php";
+            break;
+
+        case 'sobre':
+            $view = "sobre.php";
             break;
 
         default:
