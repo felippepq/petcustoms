@@ -81,6 +81,8 @@
 	
 		<h2>Adote seu <b>Pet</b></h2>
 
+		<img src="../Img/deficientes.png" class="img-responsive img-fluid" href="#" width="1400" alt="">
+
 		<h2 class="mt-5">Contatos</h2>
 	
 	<div class="row">
@@ -128,10 +130,6 @@
 </div>
 </div>
 </div>
-
-
-
-
 		</div>
 	</div>
 </div>
