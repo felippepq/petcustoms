@@ -1,10 +1,10 @@
 # Details
 
-Date : 2020-01-27 20:15:07
+Date : 2020-01-28 06:52:06
 
 Directory c:\xampp\htdocs\petcustoms\www\
 
-Total : 95 files,  4738 codes, 55 comments, 1426 blanks, all 6219 lines
+Total : 97 files,  4726 codes, 56 comments, 1439 blanks, all 6221 lines
 
 [summary](results.md)
 
@@ -45,6 +45,7 @@ Total : 95 files,  4738 codes, 55 comments, 1426 blanks, all 6219 lines
 | [DAO\DAOPedido.php](file:///c%3A/xampp/htdocs/petcustoms/www/DAO/DAOPedido.php) | PHP | 118 | 1 | 34 | 153 |
 | [DAO\DAOProduto.php](file:///c%3A/xampp/htdocs/petcustoms/www/DAO/DAOProduto.php) | PHP | 97 | 0 | 32 | 129 |
 | [DAO\DAOUsuario.php](file:///c%3A/xampp/htdocs/petcustoms/www/DAO/DAOUsuario.php) | PHP | 45 | 1 | 20 | 66 |
+| [Img\icon-logo.svg](file:///c%3A/xampp/htdocs/petcustoms/www/Img/icon-logo.svg) | XML | 1 | 0 | 0 | 1 |
 | [Img\logo-1teste.svg](file:///c%3A/xampp/htdocs/petcustoms/www/Img/logo-1teste.svg) | XML | 104 | 0 | 2 | 106 |
 | [Includes\Config.php](file:///c%3A/xampp/htdocs/petcustoms/www/Includes/Config.php) | PHP | 29 | 0 | 5 | 34 |
 | [Includes\Seguranca.php](file:///c%3A/xampp/htdocs/petcustoms/www/Includes/Seguranca.php) | PHP | 16 | 0 | 5 | 21 |
@@ -61,7 +62,7 @@ Total : 95 files,  4738 codes, 55 comments, 1426 blanks, all 6219 lines
 | [Model\Pedido.php](file:///c%3A/xampp/htdocs/petcustoms/www/Model/Pedido.php) | PHP | 50 | 2 | 12 | 64 |
 | [Model\Produto.php](file:///c%3A/xampp/htdocs/petcustoms/www/Model/Produto.php) | PHP | 49 | 0 | 14 | 63 |
 | [Model\Usuario.php](file:///c%3A/xampp/htdocs/petcustoms/www/Model/Usuario.php) | PHP | 27 | 0 | 8 | 35 |
-| [View\Item.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/Item.php) | PHP | 55 | 0 | 36 | 91 |
+| [View\Item.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/Item.php) | PHP | 57 | 0 | 36 | 93 |
 | [View\admin.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/admin.php) | PHP | 3 | 0 | 2 | 5 |
 | [View\carrinho.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/carrinho.php) | PHP | 95 | 4 | 30 | 129 |
 | [View\cat-cachorro.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/cat-cachorro.php) | PHP | 49 | 0 | 10 | 59 |
@@ -78,10 +79,10 @@ Total : 95 files,  4738 codes, 55 comments, 1426 blanks, all 6219 lines
 | [View\form-login-cliente.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/form-login-cliente.php) | PHP | 35 | 0 | 5 | 40 |
 | [View\form-produto.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/form-produto.php) | PHP | 46 | 0 | 20 | 66 |
 | [View\form-usuario.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/form-usuario.php) | PHP | 26 | 0 | 9 | 35 |
-| [View\header-admin.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/header-admin.php) | PHP | 64 | 0 | 10 | 74 |
-| [View\header-login.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/header-login.php) | PHP | 196 | 3 | 48 | 247 |
-| [View\header.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/header.php) | PHP | 392 | 7 | 69 | 468 |
-| [View\index.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/index.php) | PHP | 137 | 0 | 31 | 168 |
+| [View\header-admin.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/header-admin.php) | PHP | 66 | 0 | 11 | 77 |
+| [View\header-login.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/header-login.php) | PHP | 198 | 3 | 49 | 250 |
+| [View\header.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/header.php) | PHP | 392 | 7 | 75 | 474 |
+| [View\index.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/index.php) | PHP | 113 | 0 | 27 | 140 |
 | [View\lista-cliente.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/lista-cliente.php) | PHP | 32 | 0 | 10 | 42 |
 | [View\lista-departamento.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/lista-departamento.php) | PHP | 17 | 0 | 11 | 28 |
 | [View\lista-fornecedor.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/lista-fornecedor.php) | PHP | 24 | 0 | 12 | 36 |
@@ -94,12 +95,13 @@ Total : 95 files,  4738 codes, 55 comments, 1426 blanks, all 6219 lines
 | [View\painel-editar-cliente.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/painel-editar-cliente.php) | PHP | 103 | 0 | 31 | 134 |
 | [View\painel-pedido.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/painel-pedido.php) | PHP | 80 | 0 | 21 | 101 |
 | [View\produtos.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/produtos.php) | PHP | 50 | 0 | 10 | 60 |
-| [View\regulamento.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/regulamento.php) | PHP | 93 | 0 | 40 | 133 |
+| [View\regulamento.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/regulamento.php) | PHP | 94 | 0 | 41 | 135 |
 | [View\resultado-busca.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/resultado-busca.php) | PHP | 49 | 0 | 18 | 67 |
+| [View\sobre.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/sobre.php) | PHP | 7 | 0 | 8 | 15 |
 | [View\visualiza-cliente-id.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/visualiza-cliente-id.php) | PHP | 21 | 0 | 11 | 32 |
 | [View\visualiza-departamento.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/visualiza-departamento.php) | PHP | 21 | 0 | 10 | 31 |
 | [View\visualiza-usuario-id.php](file:///c%3A/xampp/htdocs/petcustoms/www/View/visualiza-usuario-id.php) | PHP | 26 | 0 | 10 | 36 |
-| [controller.php](file:///c%3A/xampp/htdocs/petcustoms/www/controller.php) | PHP | 199 | 2 | 51 | 252 |
+| [controller.php](file:///c%3A/xampp/htdocs/petcustoms/www/controller.php) | PHP | 196 | 3 | 51 | 250 |
 | [css\bootstrap\bootstrap.min.css](file:///c%3A/xampp/htdocs/petcustoms/www/css/bootstrap/bootstrap.min.css) | CSS | 1 | 5 | 1 | 7 |
 | [css\bootstrap\bootstrap.min.js](file:///c%3A/xampp/htdocs/petcustoms/www/css/bootstrap/bootstrap.min.js) | JavaScript | 1 | 5 | 1 | 7 |
 | [css\bootstrap\jquery.js](file:///c%3A/xampp/htdocs/petcustoms/www/css/bootstrap/jquery.js) | JavaScript | 3 | 3 | 0 | 6 |

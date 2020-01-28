@@ -463,7 +463,6 @@ a{
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item"> <a class="nav-link " href="<?php echo $url;?>/produtos/" >Produtos</a></li>
                             <li class="nav-item"> <a class="nav-link" href="<?php echo $url;?>/home/" data-abc="true">Inicio</a> </li>
-                            <li class="nav-item"> <a class="nav-link" href="<?php echo $url;?>/contato" data-abc="true">Contato</a> </li>
                             <li class="nav-item"> <a class="nav-link" href="<?php echo $url;?>/sobre/" data-abc="true">Sobre nós</a> </li>
                         </ul>
                     </div>
