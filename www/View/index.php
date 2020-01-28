@@ -33,31 +33,74 @@
 	<h2>Produtos <b>Em Ofertas</b></h2>
 
 	
-
-	 <div class="row px-3">
-                
-			
-					<div class="col-12 col-sm-8 col-md-6 col-lg-4">
-						 <div class="card shadow-sm mt-2">
-							<img class="w-100 mt-2 mb-3 foto-produto" src="../Img/blusa-masc.jpg" />
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3 mt-1">
+            <div class="card">
+              <img class="w-100 mt-2 mb-3 foto-produto" src="../View/img/produtos/34cda5b70ebebb9e02eec0539ead60d3.jpg" />
 				<div class="card-body">
-					<h4 class="card-title font-weight-bold nome-produto text-center"><a href="<?php echo $url; ?>/produto/item/28/">Camiseta</h4>
+					<h4 class="card-title font-weight-bold nome-produto text-center"><a href="<?php echo $url; ?>/produto/item/41/">Camiseta Personalizada</h4>
 						 <h6 class="card-subtitle mb-2 text-muted text-center"><a href="#">Roupas</h6>
 				<div class="buy d-flex justify-content-between align-items-center">
-					<div class="price text-dark preco-produto"><h5 class="mt-4">R$ 39,90</h5></div>
+					<div class="price text-dark preco-produto"><h5 class="mt-4">R$ 49,90</h5></div>
 				<div>
-					<a href="<?php echo $url ?>/carrinho/adicionar/26/" class="btn btn-warning mt-3 ml-2 font-weight-bold botao-carrinho"> <i  href="<?php echo $url ?>/carrinho/adicionar/<?php echo $produto['id'] ?>" class="fas fa-shopping-cart"></i> +</a>
+					<a href="<?php echo $url ?>/carrinho/adicionar/41/" class="btn btn-warning mt-3 ml-2 font-weight-bold botao-carrinho"> <i  href="<?php echo $url ?>/carrinho/adicionar/<?php echo $produto['id'] ?>" class="fas fa-shopping-cart"></i> +</a>
 				</div>
 					</div>
-						</div>
-							</div>
-								</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 mt-1">
+            <div class="card">
+			<img class="w-100 mt-2 mb-3 foto-produto" src="../View/img/produtos/efc03c3f7d47a050f4e2caf40907f051.jpg" />
+				<div class="card-body">
+					<h4 class="card-title font-weight-bold nome-produto text-center"><a href="<?php echo $url; ?>/produto/item/42/">Travesseiro - Personalizado</h4>
+						 <h6 class="card-subtitle mb-2 text-muted text-center"><a href="#">Acessorios</h6>
+				<div class="buy d-flex justify-content-between align-items-center">
+					<div class="price text-dark preco-produto"><h5 class="mt-4">R$ 80,00</h5></div>
+				<div>
+					<a href="<?php echo $url ?>/carrinho/adicionar/42/" class="btn btn-warning mt-3 ml-2 font-weight-bold botao-carrinho"> <i  href="<?php echo $url ?>/carrinho/adicionar/<?php echo $produto['id'] ?>" class="fas fa-shopping-cart"></i> +</a>
 				</div>
 					</div>
-						</div>
+				
+        </div>
+		</div>
+		</div>
+		<div class="col-sm-3 mt-1">
+            <div class="card">
+			<img class="w-100 mt-2 mb-3 foto-produto" src="../View/img/produtos/7f3fbf4ce2f2c6fdb974c9a4f569fce1.jpg" />
+				<div class="card-body">
+					<h4 class="card-title font-weight-bold nome-produto text-center"><a href="<?php echo $url; ?>/produto/item/44/">Kit p/ Bebê e Dog</h4>
+						 <h6 class="card-subtitle mb-2 text-muted text-center"><a href="#">Roupas</h6>
+				<div class="buy d-flex justify-content-between align-items-center">
+					<div class="price text-dark preco-produto"><h5 class="mt-4">R$ 80,00</h5></div>
+				<div>
+					<a href="<?php echo $url ?>/carrinho/adicionar/44/" class="btn btn-warning mt-3 ml-2 font-weight-bold botao-carrinho"> <i  href="<?php echo $url ?>/carrinho/adicionar/<?php echo $produto['id'] ?>" class="fas fa-shopping-cart"></i> +</a>
+				</div>
+					</div>
+				
+        </div>
+		</div>
+		</div>
+		<div class="col-sm-3 mt-1">
+            <div class="card">
+			<img class="w-100 mt-2 mb-3 foto-produto" src="../Img/blusa-masc.jpg" />
+				<div class="card-body">
+					<h4 class="card-title font-weight-bold nome-produto text-center"><a href="<?php echo $url; ?>/produto/item/46/"> Brinquedo Kong</h4>
+						 <h6 class="card-subtitle mb-2 text-muted text-center"><a href="#">Brinquedos</h6>
+				<div class="buy d-flex justify-content-between align-items-center">
+					<div class="price text-dark preco-produto"><h5 class="mt-4">R$ 69,00</h5></div>
+				<div>
+					<a href="<?php echo $url ?>/carrinho/adicionar/46/" class="btn btn-warning mt-3 ml-2 font-weight-bold botao-carrinho"> <i  href="<?php echo $url ?>/carrinho/adicionar/<?php echo $produto['id'] ?>" class="fas fa-shopping-cart"></i> +</a>
+				</div>
+					</div>
+				
+        </div>
+		</div>
+		</div>
 
-							</div>            
-			
+                </div>
+        </div>
 <!---->
 <div class="container">
 	<h2>Categorias</h2>
@@ -79,9 +122,11 @@
 	</div>
 	<div class="container">
 	
+
 		<h2>Adote seu <b>Pet</b></h2>
 
 		<img src="../Img/deficientes.png" class="img-responsive img-fluid" href="#" width="1400" alt="">
+
 
 		<h2 class="mt-5">Contatos</h2>
 	

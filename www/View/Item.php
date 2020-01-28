@@ -44,7 +44,7 @@
 
             <form class="d-flex justify-content-left">
               <!-- Default input -->
-              <a href="<?php echo $url ?>/carrinho/adicionar/<?php echo $detalhe['nome'] ?>" class="btn btn-primary titulo-tabela btn-md my-0 p text-center"  type="submit">Adicionar ao Carrinho
+              <a href="<?php echo $url ?>/carrinho/adicionar/<?php echo $produto['id'] ?>" class="btn btn-primary titulo-tabela btn-md my-0 p text-center"  type="submit">Adicionar ao Carrinho
                 <i class="fas fa-shopping-cart ml-1"></i>
       </a>
 
